@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  
+
+  <title>Docker and CentOS 7 (Part II) &middot; OwnBlog from DimiG</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+  <link rel="alternate" type="application/rss+xml" title="OwnBlog from DimiG" href="http://dgtekmate.ga/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/Docker.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://dgtekmate.ga/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="http://dgtekmate.ga/css/solarized-dark.css">
+    
+  
+    
+        <link rel="stylesheet" href="http://dgtekmate.ga/css/custom.css">
+    
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://dgtekmate.ga/">OwnBlog</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://dgtekmate.ga/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/akaDimiG" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 DimiG<br>All rights reserved</small>
+  </div>
+  <div class="small-print">
+    
+    
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Docker and CentOS 7 (Part II)</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>21 Nov 2017</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="http://dgtekmate.ga/topics/technical">Technical</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://dgtekmate.ga/tags/docker">Docker</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>The second part of article <strong>Docker and CentOS 7</strong> will highlight the question about <a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker</a> optimization for <a href="https://en.wikipedia.org/wiki/CentOS">CentOS</a> production platform. Here is how.<br></p>
+
+<p>By default the <a href="https://en.wikipedia.org/wiki/CentOS">CentOS 7</a> installer will create the <strong>XFS</strong> file system during <strong>OS</strong> installation. The <strong>XFS</strong> file systems must be created with the <code>-n ftype=1</code> option enabled for use as an overlay. If no there is a problem cause to change it you have to reformat the file system with correct settings. The newer <a href="https://en.wikipedia.org/wiki/CentOS">CentOS</a> installers do it with <code>ftype=1</code> option enabled.</p>
+
+<p><em>To check the settings on your file system is possible do by:</em>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ xfs_info /</code></pre></div></p>
+
+<p><em>If you get something like this:</em>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="nv">naming</span> <span class="o">=</span>version <span class="m">2</span> <span class="nv">bsize</span><span class="o">=</span><span class="m">4096</span> ascii-ci<span class="o">=</span><span class="m">0</span> <span class="nv">ftype</span><span class="o">=</span><span class="m">0</span></code></pre></div>
+You have a problem with docker installation.</p>
+
+<p><em>Also Docker may inform you about by this command:</em>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ docker info</code></pre></div></p>
+
+<p>There are different ways to overcome this problem. Format the main disk wasn&rsquo;t option for me. My way was to create <code>thinpool</code> as a part of <a href="https://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)">LVM</a> on other hard drive. Also it is a recommended way to use <a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker</a> with production servers to achieve better speed. Lets have a look how.</p>
+
+<p>I have created the <code>thinpool</code> partition on separate hard drive. All manipulations <strong>MUST</strong> be issued by <strong>root</strong>. So, be careful with your data. <strong>Backup</strong> important data first.</p>
+
+<ul>
+<li><p>First of all - stop <strong>Docker</strong>:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="o">[</span>root@host ~<span class="o">]</span><span class="c1"># systemctl stop docker</span></code></pre></div></p></li>
+
+<li><p>Format the partition (you can use <code>cfdisk</code> or <code>fdisk</code> what you prefer):
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="o">[</span>root@host ~<span class="o">]</span><span class="c1"># cfdisk /dev/sda3</span></code></pre></div>
+<strong><em>Be careful with formatting! You may damage your data!</em></strong><br>
+<strong>NOTE</strong>: Your paths may be different on your system!</p></li>
+
+<li><p>Lets show to <code>kernel</code> some changes by this:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="o">[</span>root@host ~<span class="o">]</span><span class="c1"># partprobe</span></code></pre></div></p></li>
+
+<li><p>Create the <em>Physical Volume</em> by:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="o">[</span>root@host ~<span class="o">]</span><span class="c1"># pvcreate /dev/sda3</span></code></pre></div></p></li>
+
+<li><p>Create the <em>Volume Group</em> by:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="o">[</span>root@host ~<span class="o">]</span><span class="c1"># vgcreate -s 32M vg_docker /dev/sda3</span></code></pre></div></p></li>
+
+<li><p>Check <em>Volume Group</em> if everything correct by:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="o">[</span>root@host ~<span class="o">]</span><span class="c1"># vgs</span></code></pre></div></p></li>
+
+<li><p>Create a <em>Logical Volume</em> by:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="o">[</span>root@host ~<span class="o">]</span><span class="c1"># lvcreate -L 20G --thinpool tp_docker_pool vg_docker</span></code></pre></div></p></li>
+
+<li><p>Check <em>Logical Volume</em> if everything correct by:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="o">[</span>root@host ~<span class="o">]</span><span class="c1"># lvs</span>
+<span class="o">[</span>root@host ~<span class="o">]</span><span class="c1"># lvdisplay vg_docker/tp_docker_pool</span></code></pre></div></p></li>
+</ul>
+
+<p>The next step is change the <em>Docker</em> configuration.</p>
+
+<ul>
+<li><p>I have removed the <em>Docker</em> files by this:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="o">[</span>root@host ~<span class="o">]</span><span class="c1"># rm -rf /var/lib/docker/*</span></code></pre></div></p></li>
+
+<li><p>Next, create the <code>daemon.json</code> file by this PATH:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="o">[</span>root@host ~<span class="o">]</span><span class="c1"># touch /etc/docker/daemon.json</span></code></pre></div></p></li>
+
+<li><p>With such text inside:
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"> <span class="p">{</span>
+  <span class="nt">&#34;storage-driver&#34;</span><span class="p">:</span> <span class="s2">&#34;devicemapper&#34;</span><span class="p">,</span>
+  <span class="nt">&#34;storage-opts&#34;</span><span class="p">:</span> <span class="p">[</span>
+         <span class="s2">&#34;dm.thinpooldev=/dev/mapper/vg_docker-tp_docker_pool&#34;</span><span class="p">,</span>
+         <span class="s2">&#34;dm.use_deferred_removal=true&#34;</span>
+  <span class="p">]</span>
+ <span class="p">}</span></code></pre></div></p></li>
+
+<li><p>After that start <em>Docker</em> again:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="o">[</span>root@host ~<span class="o">]</span><span class="c1"># systemctl start docker</span></code></pre></div></p></li>
+
+<li><p>Now <em>Docker</em> should work without any warnings. Check it by:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="o">[</span>root@host ~<span class="o">]</span><span class="c1"># docker info</span></code></pre></div></p></li>
+
+<li><p>To test if <em>Docker</em> still running use:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="o">[</span>root@host ~<span class="o">]</span><span class="c1"># docker run --rm hello-world</span></code></pre></div></p></li>
+</ul>
+
+<p>If you see <code>Hello World</code> you passed this quest ;)</p>
+
+<p>Be back soon. <em>Thanks for your time&hellip;</em></p>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://dgtekmate.ga/post/2017-10-27-docker-and-centos7-p1/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://dgtekmate.ga/post/2017-10-27-docker-and-centos7-p1/">Docker and CentOS 7 (Part I)</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://dgtekmate.ga/post/2017-11-23-docker-bind-mounts-windows7/">Docker Bind Mounts on Windows 7</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://dgtekmate.ga/post/2017-11-23-docker-bind-mounts-windows7/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'dimig';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://dgtekmate.ga/js/ui.js"></script>
+<script src="http://dgtekmate.ga/js/menus.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rsync on OwnBlog from DimiG</title>
+    <link>http://dgtekmate.ga/tags/rsync/</link>
+    <description>Recent content in rsync on OwnBlog from DimiG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 DimiG&lt;br&gt;All rights reserved</copyright>
+    <lastBuildDate>Wed, 19 Aug 2015 11:00:00 +0300</lastBuildDate>
+    
+	<atom:link href="http://dgtekmate.ga/tags/rsync/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rsync HowTo</title>
+      <link>http://dgtekmate.ga/post/2015-08-19-rsync-howto/</link>
+      <pubDate>Wed, 19 Aug 2015 11:00:00 +0300</pubDate>
+      
+      <guid>http://dgtekmate.ga/post/2015-08-19-rsync-howto/</guid>
+      <description>&lt;p&gt;In this post I wanna give a clue how to use well known and famous Open Source &lt;a href=&#34;https://rsync.samba.org&#34;&gt;rsync&lt;/a&gt; program for directories synchronization.
+&lt;a href=&#34;https://rsync.samba.org&#34;&gt;rsync&lt;/a&gt; is a widely-used utility to keep copies of a file on two computer systems are same. It is commonly found on Unix-like systems and functions as both a file synchronization and file transfer program. The rsync algorithm, a type of delta encoding, is used to minimize network usage. Zlib may be used for additional compression, and SSH or stunnel can be used for data security.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

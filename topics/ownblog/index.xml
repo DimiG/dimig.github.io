@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OwnBlog on OwnBlog from DimiG</title>
+    <link>http://dgtekmate.ga/topics/ownblog/</link>
+    <description>Recent content in OwnBlog on OwnBlog from DimiG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 DimiG&lt;br&gt;All rights reserved</copyright>
+    <lastBuildDate>Fri, 18 Aug 2017 11:00:00 +0300</lastBuildDate>
+    
+	<atom:link href="http://dgtekmate.ga/topics/ownblog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blog Domain Name changed</title>
+      <link>http://dgtekmate.ga/post/2017-08-18-dn-changed/</link>
+      <pubDate>Fri, 18 Aug 2017 11:00:00 +0300</pubDate>
+      
+      <guid>http://dgtekmate.ga/post/2017-08-18-dn-changed/</guid>
+      <description>&lt;p&gt;This is a short article just for information.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>http://dgtekmate.ga/post/2015-07-24-my-first-post/</link>
+      <pubDate>Fri, 24 Jul 2015 11:00:00 +0300</pubDate>
+      
+      <guid>http://dgtekmate.ga/post/2015-07-24-my-first-post/</guid>
+      <description>&lt;p&gt;Hello everyone!!!
+My name is &lt;strong&gt;Dmitri&lt;/strong&gt; and this is my first time I use the static WEB site on &lt;em&gt;GitHub&lt;/em&gt;. My oldie Blog is located on &lt;a href=&#34;http://dimig.blogspot.ru&#34;&gt;BlogSpot&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

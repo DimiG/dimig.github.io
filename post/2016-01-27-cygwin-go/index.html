@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  
+
+  <title>Golang under Cygwin &middot; OwnBlog from DimiG</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+  <link rel="alternate" type="application/rss+xml" title="OwnBlog from DimiG" href="http://dgtekmate.ga/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/Docker.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://dgtekmate.ga/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="http://dgtekmate.ga/css/solarized-dark.css">
+    
+  
+    
+        <link rel="stylesheet" href="http://dgtekmate.ga/css/custom.css">
+    
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://dgtekmate.ga/">OwnBlog</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://dgtekmate.ga/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/akaDimiG" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 DimiG<br>All rights reserved</small>
+  </div>
+  <div class="small-print">
+    
+    
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Golang under Cygwin</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>27 Jan 2016</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="http://dgtekmate.ga/topics/technical">Technical</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://dgtekmate.ga/tags/cygwin">Cygwin</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>The current article I have to write by two reasons. First - the <a href="https://golang.org">Go</a> language developed by <em>Google</em> becoming popular little by little. Second - there is <strong>NO</strong> accurate information about how to setup <em>Go</em> under <a href="https://www.cygwin.com">Cygwin</a>.</p>
+
+<p>&ldquo;<em>Go</em> also commonly referred to as <em>Golang</em>, is a open source programming language developed at <em>Google</em> in <strong>2007</strong> by <em>Robert Griesemer</em>, <em>Rob Pike</em>, and <em>Ken Thompson</em>. Designed primarily for systems programming, it is a compiled, statically typed language in the tradition of <strong>C</strong> and <strong>C++</strong>, with garbage collection, various safety features and CSP-style concurrent programming features added.&rdquo;</p>
+
+<p>To setup <em>Golang</em> under <em>Cygwin</em> you need a version of <em>Go</em> for <em>Windows</em> platform (<sup>64</sup>&frasl;<sub>32</sub>-bit). You can download it from <a href="https://golang.org/dl/">HERE</a>. I used <code>go1.5.3.windows-amd64.zip</code> in time of writing.</p>
+
+<p>Unzip the package into the <code>$HOME/go</code> directory of your <a href="https://www.cygwin.com">Cygwin</a> environment. You can chose the other directory name if you like.</p>
+
+<p>Next add the environment variables to the <code>.bash_profile</code> file:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># Golang</span>
+<span class="nb">export</span> <span class="nv">GOROOT</span><span class="o">=</span><span class="s2">&#34;C:/cygwin64/home/UserName/go&#34;</span>
+<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$HOME</span>/go/bin
+<span class="nb">export</span> <span class="nv">GOPATH</span><span class="o">=</span><span class="s2">&#34;C:/cygwin64/home/UserName/code/gowork&#34;</span></code></pre></div></p>
+
+<p>Pay attention, <em>Golang</em> demands to have the full <em>Windows</em> style path <strong>not Cygwin</strong> path. <em>Golang</em> located in home <code>go</code> directory and my working directory for <em>Go</em> programming located in <code>code/gowork</code>. Correct your <em>PATHs</em> if something different from your location.</p>
+
+<p>This <a href="https://golang.org/doc/install">documentation</a> describes how to create the <code>Hello World</code> program and run it on your system.</p>
+
+<p>If you have any experience, tips or suggestions write the comments below.<br/><br/><em>Thanks for your time</em>.</p>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://dgtekmate.ga/post/2016-01-25-cygwin-pass/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://dgtekmate.ga/post/2016-01-25-cygwin-pass/">UNIX pass under Cygwin</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://dgtekmate.ga/post/2016-02-02-emacs-strip/">Emacs strip CR(^M)</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://dgtekmate.ga/post/2016-02-02-emacs-strip/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'dimig';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://dgtekmate.ga/js/ui.js"></script>
+<script src="http://dgtekmate.ga/js/menus.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+

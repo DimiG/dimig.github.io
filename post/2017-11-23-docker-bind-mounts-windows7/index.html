@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  
+
+  <title>Docker Bind Mounts on Windows 7 &middot; OwnBlog from DimiG</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+  <link rel="alternate" type="application/rss+xml" title="OwnBlog from DimiG" href="http://dgtekmate.ga/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/Docker.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://dgtekmate.ga/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="http://dgtekmate.ga/css/solarized-dark.css">
+    
+  
+    
+        <link rel="stylesheet" href="http://dgtekmate.ga/css/custom.css">
+    
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://dgtekmate.ga/">OwnBlog</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://dgtekmate.ga/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/akaDimiG" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 DimiG<br>All rights reserved</small>
+  </div>
+  <div class="small-print">
+    
+    
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Docker Bind Mounts on Windows 7</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>23 Nov 2017</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="http://dgtekmate.ga/topics/technical">Technical</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://dgtekmate.ga/tags/docker">Docker</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>Work with <a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker</a> on <em>Windows 7</em> has some specific differences. This technology targeted mostly to <em>Linux</em> platform. Use <em>Mac OS</em> or <em>Windows</em> is not recommended for production servers. But it is good for software or even hardware developers. For them it is important to have access from <em>Docker container</em> to local file system of host operating system. This way calls <em>Bind Mounts</em>. In the current article we will discuss this question and how it works on <em>Windows 7</em> platform.<br></p>
+
+<p>The <a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker</a> on <em>Windows 7</em> has one additional layer between container and host operating system which is slow down the <a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker</a> speed, increase <a href="https://en.wikipedia.org/wiki/Random-access_memory">RAM</a> expenses and isolate the <em>Docker machine</em> from host file system. <a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker</a> uses <a href="http://boot2docker.io">boot2docker</a> system as <em>Docker Machine</em>. <a href="http://boot2docker.io">Boot2docker</a> is a lightweight <em>Linux</em> distribution based on <em>Tiny Core Linux</em> made specifically to run <a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker</a> containers. <em>Docker</em> uses <a href="https://en.wikipedia.org/wiki/VirtualBox">Virtual Box</a> as <a href="https://en.wikipedia.org/wiki/Virtual_machine">Virtual Machine</a> (<strong>VM</strong>). More details can be found on official <a href="https://docs.docker.com">Docker documentation</a> page.</p>
+
+<p>To run <em>Docker</em> containers I prefer to use <a href="https://docs.docker.com/compose">Docker compose</a>. <em>Compose</em> is a tool for defining and running multi-container <em>Docker</em> applications. The <em>Docker</em> on <em>Mac OS</em> and <em>Linux</em> does not require to use any <a href="https://en.wikipedia.org/wiki/Virtual_machine">VM</a> as <em>Windows 7</em> does. If I want to get access to files on host operating system from <em>Docker</em> container I need to make additional steps to make it. <code>Bind mounts</code> is a way to do it. More details can be found on official <a href="https://docs.docker.com/engine/admin/volumes/bind-mounts/">Docker documentation</a> page.</p>
+
+<p>Unfortunately the official <a href="https://docs.docker.com">Docker documentation</a> does not describe well all aspects of systems configuration. I spent half day to find the way to do it with <em>Windows 7</em> as a host system. The <em>Virtual Box</em> Virtual Machine (<strong>VM</strong>) allow access only <code>C:\Users</code> folder on the host operating system by default. Which is not very convenient cause my files I want to use in container may be located in other place and it is not a good idea by security reasons. That is why the better way just run the <em>Virtual Box</em> and change the sharing folders in setting to any place you prefer. Don&rsquo;t forget to stop default <strong>VM</strong> before this procedure. The alias you give for new shared folder will be automatically mounted into <em>Docker machine</em> <code>root</code> file structure. So, you can use in your container configuration <code>/yourAlias/...</code></p>
+
+<p>If you prefer to mount you shared folder to other place (<code>/mnt</code> or something ) and make location in container configuration files more close to real infrastructure you can use such trick (<strong><em>see below</em></strong>).</p>
+
+<p><em>Log In</em> into the <em>Docker machine</em> via terminal and make the mounting point inside it. The problem is that if you do simple <code>mount</code> command you will fail on your next restart your <em>Docker machine</em>. All your settings will be lost. That is why we need to create the special file which will command the <em>Docker machine</em> to mount it automatically.</p>
+
+<p>In <em>Docker Quickstart Terminal</em> issue these commands:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ docker-machine ssh</code></pre></div>
+By this you will access the <em>Docker machine</em> file system.</p>
+
+<p>Next step is to change the directory and create the special file for this machine:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ <span class="nb">cd</span> /mnt/sda1/var/lib/boot2docker/
+$ sudo touch bootlocal.sh</code></pre></div></p>
+
+<p>Add this text to <code>bootlocal.sh</code> shell file as <code>root</code>:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">mkdir -p /mnt/myfiles
+mount -t vboxsf -o defaults,<span class="se">\
+</span><span class="se"></span><span class="nv">uid</span><span class="o">=</span><span class="sb">`</span>id -u docker<span class="sb">`</span>,<span class="se">\
+</span><span class="se"></span><span class="nv">gid</span><span class="o">=</span><span class="sb">`</span>id -g docker<span class="sb">`</span> myfiles /mnt/myfiles</code></pre></div>
+Close and save the file. Mount point will get correct permissions.</p>
+
+<p>Exit <em>Docker machine</em> and restart one:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ docker-machine restart</code></pre></div></p>
+
+<p>Once it’s finished, log back in and verify it’s there:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ docker-machine ssh
+$ ls /mnt/myfiles</code></pre></div>
+You should see the contents of your shared folder.</p>
+
+<p>You have to change the <code>docker-compose.yml</code> file to make it work. Use the full <code>PATHs</code> in your <code>volumes:</code> section like this: <code>/mnt/myfiles/...</code></p>
+
+<p><em>If you have better solution let me know. ;)</em><br/><br/>Be back soon. <em>Have a good day&hellip;</em></p>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://dgtekmate.ga/post/2017-11-21-docker-and-centos7-p2/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://dgtekmate.ga/post/2017-11-21-docker-and-centos7-p2/">Docker and CentOS 7 (Part II)</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'dimig';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://dgtekmate.ga/js/ui.js"></script>
+<script src="http://dgtekmate.ga/js/menus.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+

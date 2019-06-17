@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  
+
+  <title>Lftp mirror &middot; OwnBlog from DimiG</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+  <link rel="alternate" type="application/rss+xml" title="OwnBlog from DimiG" href="http://dgtekmate.ga/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/Docker.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://dgtekmate.ga/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="http://dgtekmate.ga/css/solarized-dark.css">
+    
+  
+    
+        <link rel="stylesheet" href="http://dgtekmate.ga/css/custom.css">
+    
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://dgtekmate.ga/">OwnBlog</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://dgtekmate.ga/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/akaDimiG" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 DimiG<br>All rights reserved</small>
+  </div>
+  <div class="small-print">
+    
+    
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Lftp mirror</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>01 Sep 2015</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="http://dgtekmate.ga/topics/technical">Technical</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://dgtekmate.ga/tags/lftp">Lftp</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>The <strong>FTP</strong> <em>File Transfer Protocol</em> protocol is quite old. It was created in <strong>1971</strong> and changed in <strong>1972</strong> which was closed to modern version.
+Development of the Internet endangered using <strong>FTP</strong> cause of the security weakness. Anyway this protocol is still usable in some production areas like <em>WEB design</em>, <em>Post production</em>, etc.
+As for me I prefer to stay away from <strong>FTP</strong> and prefer the modern secured protocols, but in some cases I have to use it for a while.</p>
+
+<p>As a <em>UNIX geek</em> I prefer to use the terminal based applications. For <strong>FTP</strong> protocol the <code>lftp</code> program is a good choice.
+Just recently I learned that there exists a function <code>mirror</code> there which gives ability to mirror files and directories from the remote <strong>FTP</strong> server. To work with it is very simple:</p>
+
+<p>The generic syntax in <code>lftp</code> interactive mode:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">  mirror
+  mirror options
+  mirror -c
+  mirror -R</code></pre></div>
+&hellip;where
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">  -c, --continue (continue a mirror job if possible);
+  -R, --reverse (reverse mirror (put files));
+  -P, --parallel[=N] (download N files in parallel);
+  -n, --only-newer (download only newer files (-c won&#39;t work))</code></pre></div></p>
+
+<p>First, you need to connect to the remote <strong>FTP</strong> server using the following syntax:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ lftp username@ftp.server.com</code></pre></div></p>
+
+<p>To mirror all of the above files in the current directory, enter:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ lftp username@ftp.server.com:~&gt; mirror</code></pre></div></p>
+
+<p>I highly recommend that you start mirror job with <em>resume</em> option. This make sure if <strong>FTP</strong> mirror was failed due to network connection it will only download partial file:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ lftp username@ftp.server.com:~&gt; mirror -c</code></pre></div></p>
+
+<p>To download only newer files (-c won&rsquo;t work):
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ lftp username@ftp.server.com:~&gt; mirror -n</code></pre></div></p>
+
+<p>You can speed up <strong>FTP</strong> mirror operation by downloading files in parallel using the following syntax:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ lftp username@ftp.server.com:~&gt; mirror -p</code></pre></div></p>
+
+<p>You need to pass <code>-R</code> or <code>--reverse</code> option to do reverse mirror i.e. put all files from a local disk to a remote <strong>FTP</strong> server including sub-dirs and all files in it:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ lftp username@ftp.server.com:~&gt; mirror -R</code></pre></div></p>
+
+<p>Thanks for your attention.</p>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://dgtekmate.ga/post/2015-08-20-powershell-mag/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://dgtekmate.ga/post/2015-08-20-powershell-mag/">PowerShell Magazine</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://dgtekmate.ga/post/2015-10-16-atto-celerity-setup/">ATTO Celerity setup in OS X El Capitan</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://dgtekmate.ga/post/2015-10-16-atto-celerity-setup/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'dimig';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://dgtekmate.ga/js/ui.js"></script>
+<script src="http://dgtekmate.ga/js/menus.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+

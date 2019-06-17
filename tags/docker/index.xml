@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on OwnBlog from DimiG</title>
+    <link>http://dgtekmate.ga/tags/docker/</link>
+    <description>Recent content in Docker on OwnBlog from DimiG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 DimiG&lt;br&gt;All rights reserved</copyright>
+    <lastBuildDate>Thu, 23 Nov 2017 11:00:00 +0300</lastBuildDate>
+    
+	<atom:link href="http://dgtekmate.ga/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker Bind Mounts on Windows 7</title>
+      <link>http://dgtekmate.ga/post/2017-11-23-docker-bind-mounts-windows7/</link>
+      <pubDate>Thu, 23 Nov 2017 11:00:00 +0300</pubDate>
+      
+      <guid>http://dgtekmate.ga/post/2017-11-23-docker-bind-mounts-windows7/</guid>
+      <description>&lt;p&gt;Work with &lt;a href=&#34;https://en.wikipedia.org/wiki/Docker_(software)&#34;&gt;Docker&lt;/a&gt; on &lt;em&gt;Windows 7&lt;/em&gt; has some specific differences. This technology targeted mostly to &lt;em&gt;Linux&lt;/em&gt; platform. Use &lt;em&gt;Mac OS&lt;/em&gt; or &lt;em&gt;Windows&lt;/em&gt; is not recommended for production servers. But it is good for software or even hardware developers. For them it is important to have access from &lt;em&gt;Docker container&lt;/em&gt; to local file system of host operating system. This way calls &lt;em&gt;Bind Mounts&lt;/em&gt;. In the current article we will discuss this question and how it works on &lt;em&gt;Windows 7&lt;/em&gt; platform.&lt;br&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker and CentOS 7 (Part II)</title>
+      <link>http://dgtekmate.ga/post/2017-11-21-docker-and-centos7-p2/</link>
+      <pubDate>Tue, 21 Nov 2017 11:00:00 +0300</pubDate>
+      
+      <guid>http://dgtekmate.ga/post/2017-11-21-docker-and-centos7-p2/</guid>
+      <description>&lt;p&gt;The second part of article &lt;strong&gt;Docker and CentOS 7&lt;/strong&gt; will highlight the question about &lt;a href=&#34;https://en.wikipedia.org/wiki/Docker_(software)&#34;&gt;Docker&lt;/a&gt; optimization for &lt;a href=&#34;https://en.wikipedia.org/wiki/CentOS&#34;&gt;CentOS&lt;/a&gt; production platform. Here is how.&lt;br&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker and CentOS 7 (Part I)</title>
+      <link>http://dgtekmate.ga/post/2017-10-27-docker-and-centos7-p1/</link>
+      <pubDate>Fri, 27 Oct 2017 11:00:00 +0300</pubDate>
+      
+      <guid>http://dgtekmate.ga/post/2017-10-27-docker-and-centos7-p1/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Docker_(software)&#34;&gt;Docker&lt;/a&gt; is a quite new technology of software virtualization and step forward of virtual environment. &lt;a href=&#34;https://en.wikipedia.org/wiki/Docker_(software)&#34;&gt;Docker&lt;/a&gt; is different from classical &lt;a href=&#34;https://en.wikipedia.org/wiki/Virtual_machine&#34;&gt;virtual machines&lt;/a&gt; (VMs). More details about can be found in &lt;a href=&#34;https://docs.docker.com&#34;&gt;official docker documentation&lt;/a&gt;. This become popular last years and this may be important for &lt;em&gt;WEB programs developers&lt;/em&gt;, &lt;em&gt;system administrators&lt;/em&gt; or &lt;em&gt;system network engineers&lt;/em&gt;. I plan to publish series short articles about &lt;a href=&#34;https://en.wikipedia.org/wiki/Docker_(software)&#34;&gt;Docker technology&lt;/a&gt; tips. Some tips are developed by me, some not. The current one will be about aliases and functions in &lt;a href=&#34;https://en.wikipedia.org/wiki/Bash_(Unix_shell)&#34;&gt;BASH&lt;/a&gt;. &lt;em&gt;Lets go starting&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

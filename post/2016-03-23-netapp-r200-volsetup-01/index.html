@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  
+
+  <title>NetApp R200 volume setup procedure &middot; OwnBlog from DimiG</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+  <link rel="alternate" type="application/rss+xml" title="OwnBlog from DimiG" href="http://dgtekmate.ga/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/Docker.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://dgtekmate.ga/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="http://dgtekmate.ga/css/solarized-dark.css">
+    
+  
+    
+        <link rel="stylesheet" href="http://dgtekmate.ga/css/custom.css">
+    
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://dgtekmate.ga/">OwnBlog</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://dgtekmate.ga/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/akaDimiG" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 DimiG<br>All rights reserved</small>
+  </div>
+  <div class="small-print">
+    
+    
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>NetApp R200 volume setup procedure</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>23 Mar 2016</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="http://dgtekmate.ga/topics/technical">Technical</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://dgtekmate.ga/tags/netapp">NetApp</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>One month ago I had opportunity to play with old filer <strong>R200</strong> from <a href="http://www.netapp.com/us/">NetApp</a> company. <em><a href="http://www.netapp.com/us/">NetApp Inc.</a></em>, formerly <em><a href="http://www.netapp.com/us/">Network Appliance Inc.</a></em>, is a well known <em>American</em> computer storage and data management company headquartered in <em>Sunnyvale</em>, <em>California</em>. <em>NetApp</em> competes in the data-storage devices industry. In <strong>2009</strong>, <em>NetApp</em> ranked second in market capitalization in its industry behind <em>EMC Corporation</em> and ahead of <em>Seagate Technology</em>, <em>Western Digital</em>, <em>Brocade</em>, <em>Imation</em>, and <em>Quantum</em>. In spite of this model was discontinued and it doesn&rsquo;t have support now by the company I have decided to resurrect it for technical purposes and files exchange inside our internal network.</p>
+
+<p>I plan to create a couple of articles about this theme here. Look into archive of my <em><a href="http://dimig.ga/archive">Blog</a></em>. You will find additional posts here soon. If you find it interesting - let me know about in comments below. In spite of <em>NetApp</em> documentation exist in the <em>Internet</em> this article reflect my own experience. Let&rsquo;s briefly describe what the system I have.</p>
+
+<p>By the way, <em>I don&rsquo;t take any responsibilities for any hardware damages or information loss you may get by information posted on this Blog. Don&rsquo;t try do it on live system. Current information for educational purposes only</em>. <strong><em>Do it for your own personal risk</em></strong>.</p>
+
+<p>This unit have one head with motherboard and two shelves with small <em>320Gb IDE</em> hard drives inside. The shelves itself are <em>SATA</em>, but have the special interfaces to convert <em>IDE</em> interface into <em>SATA</em>. One shelf has no enough hard drives inside cause they were lost or broken. One of the power supply has problem with fan also. So, I have decided to recreate one shelf and use another one as source of spare parts.</p>
+
+<p>The <em>NetApp</em> filer is possible to control via <strong>serial port</strong>, <strong>BMC</strong> <em>(Baseboard Management Controller)</em> or by <strong>Ethernet</strong> connector. I have not the <strong>BMC</strong> on this unit. The <strong>Ethernet</strong> is not working cause not possible to <em>boot</em>. So, I have decided to use the oldie <strong>serial port</strong> <em>(RS-232 standard)</em> for setup. I won&rsquo;t describe the procedure how to do it. Every technical specialist knows this well. I used the <em>Linux Box</em> to control the <em>NetApp</em> via <strong>serial port</strong>.</p>
+
+<p>First of all <strong>I DON&rsquo;T RECOMMEND</strong> to use <em>NetApp</em> <strong>boot menu</strong> with option <strong>&ldquo;Clean configuration and initialize all disks&rdquo;</strong>. You will clean configuration, initialize all disks and <strong>may lose</strong> some necessary files from <em>Filer Firmware</em>, like <em>Java</em> and other stuff. If you have not own <em>NetApp Firmware</em> for your filer it will be difficult recreate. Without <em>Java</em> you&rsquo;ll lose <em>Filer</em> control by <em>WEB interface</em> and will get annoying warnings from the system which will report you about some missing files. Also you&rsquo;ll lose all your licenses for network services. Shortly to say, <strong>use this option carefully and before do this, if you can boot the filer, copy the information about your licenses by <code>license</code> command in the terminal</strong>.</p>
+
+<p>After the disk initialization and system setup by command <code>setup</code> in the terminal you will get volume consist of two hard drives (parity and data) which calls <code>vol0</code> and bunch of spare disk you can manage.</p>
+
+<p>To get information about configuration use such command:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">netapp&gt; vol status -r</code></pre></div></p>
+
+<p>Cause I have only one shelf and disks of small volume I thought I&rsquo;d make the <em>aggregate</em> without <em>spare</em> disks. The aggregate will hold one <code>raid_dp</code> volume with 12 disks (minus 2 for <em>parity</em> and <em>dparity</em>). This volume we will create as &ldquo;<em>flexible volume</em>&rdquo; <strong>FlexVol</strong> (analog of Linux <strong>LVM</strong>).</p>
+
+<p>But before we&rsquo;ll create the aggregate let&rsquo;s zero spare disks. It is not necessary do cause aggregate procedure do it automatically, but I like do it myself, cause it takes a lot of time. On my system it takes half day, but it depends on how many hard drives you&rsquo;re going to erase:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">netapp&gt; disk zero spares
+netapp&gt; vol status -s</code></pre></div></p>
+
+<p>Next we&rsquo;ll create the aggregate:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">netapp&gt; aggr create main -r <span class="m">12</span> -t raid_dp <span class="m">12</span>
+netapp&gt; sysconfig -r</code></pre></div>
+This aggregate will consist of 12 disks and has the name <code>main</code>.</p>
+
+<p>After process is complete we&rsquo;re ready to create <em>FlexVol</em> on current <em>main</em> aggregate:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">netapp&gt; vol create vol_main -s volume main 2000g</code></pre></div>
+It will create the <em>flexible volume</em> with name <em>vol_main</em> and size <strong>2000Gb</strong>.</p>
+
+<p>Next, if you wanna change the volume size do:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">netapp&gt; vol size vol_main +200m
+netapp&gt; vol size vol_main</code></pre></div>
+It will increase the volume size on <strong>200Gb</strong>. Last command shows result.</p>
+
+<p>The last action with volume will be removing the snapshots from created volume to free up the space. I want to get the maximum available space:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">netapp&gt; snap sched -V vol_main <span class="m">0</span> <span class="m">0</span> <span class="m">0</span>
+netapp&gt; vol options vol_main nosnap on
+netapp&gt; vol options vol_main nosnapdir on
+netapp&gt; snap reserve -V vol_main <span class="m">0</span>
+netapp&gt; vol status -r</code></pre></div></p>
+
+<p>See the result:
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">netapp&gt; aggr status
+    Aggr State      Status          Options
+    vol0 online     raid4, trad     root, <span class="nv">nosnap</span><span class="o">=</span>on
+    main online     raid_dp, aggr   <span class="nv">raidsize</span><span class="o">=</span><span class="m">12</span>
+netapp&gt; vol status
+  Volume State      Status          Options
+    vol0 online     raid4, trad     root, <span class="nv">nosnap</span><span class="o">=</span>on
+vol_main online     raid_dp, flex   <span class="nv">nosnap</span><span class="o">=</span>on, <span class="nv">nosnapdir</span><span class="o">=</span>on,
+                                    <span class="nv">guarantee</span><span class="o">=</span>volume<span class="o">(</span>disabled<span class="o">)</span></code></pre></div>
+This part of article is finished now. <strong>Any comments below are welcome</strong>.<br/><br/><em>Thanks for your time&hellip;</em></p>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://dgtekmate.ga/post/2016-02-16-robocopy/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://dgtekmate.ga/post/2016-02-16-robocopy/">Robust File Copy for Windows</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://dgtekmate.ga/post/2016-03-29-netapp-r200-tips-tricks-02/">NetApp R200 Tips &amp; Tricks</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://dgtekmate.ga/post/2016-03-29-netapp-r200-tips-tricks-02/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'dimig';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://dgtekmate.ga/js/ui.js"></script>
+<script src="http://dgtekmate.ga/js/menus.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+

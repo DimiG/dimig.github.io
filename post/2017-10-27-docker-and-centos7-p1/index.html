@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  
+
+  <title>Docker and CentOS 7 (Part I) &middot; OwnBlog from DimiG</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+  <link rel="alternate" type="application/rss+xml" title="OwnBlog from DimiG" href="http://dgtekmate.ga/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/Docker.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://dgtekmate.ga/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="http://dgtekmate.ga/css/solarized-dark.css">
+    
+  
+    
+        <link rel="stylesheet" href="http://dgtekmate.ga/css/custom.css">
+    
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://dgtekmate.ga/">OwnBlog</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://dgtekmate.ga/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/akaDimiG" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 DimiG<br>All rights reserved</small>
+  </div>
+  <div class="small-print">
+    
+    
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Docker and CentOS 7 (Part I)</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>27 Oct 2017</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="http://dgtekmate.ga/topics/technical">Technical</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://dgtekmate.ga/tags/docker">Docker</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p><a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker</a> is a quite new technology of software virtualization and step forward of virtual environment. <a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker</a> is different from classical <a href="https://en.wikipedia.org/wiki/Virtual_machine">virtual machines</a> (VMs). More details about can be found in <a href="https://docs.docker.com">official docker documentation</a>. This become popular last years and this may be important for <em>WEB programs developers</em>, <em>system administrators</em> or <em>system network engineers</em>. I plan to publish series short articles about <a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker technology</a> tips. Some tips are developed by me, some not. The current one will be about aliases and functions in <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">BASH</a>. <em>Lets go starting</em>.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker</a> is a software technology providing containers, promoted by the company <a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker</a>, Inc. <a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker</a> provides an additional layer of abstraction and automation of operating-system-level virtualization on Windows and Linux. <a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker</a> uses the resource isolation features of the Linux kernel to allow independent &ldquo;<em>containers</em>&rdquo; to run within a single Linux instance, avoiding the overhead of starting and maintaining <a href="https://en.wikipedia.org/wiki/Virtual_machine">virtual machines</a> (VMs).</p>
+
+<p>These articles are dedicated to <a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker</a> installed by <a href="https://en.wikipedia.org/wiki/CentOS">CentOS 7</a> Linux operating system. The detailed explanation how setup <a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker</a> by <a href="https://en.wikipedia.org/wiki/CentOS">CentOS</a> you can easily find in <a href="https://docs.docker.com">official docker documentation</a>.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker</a> controlled by command line interface and commands are long. There is a way to increase productivity by using <code>aliases</code> and <code>functions</code> in <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">BASH</a>. Here is some&hellip;</p>
+
+<p>To simplify your life the current user CAN be added to the <code>docker</code> group on your system.</p>
+
+<p><em>Aliases:</em></p>
+
+<ul>
+<li><p>Get latest container ID
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ <span class="nb">alias</span> <span class="nv">dl</span><span class="o">=</span><span class="s2">&#34;docker ps -l -q&#34;</span></code></pre></div></p></li>
+
+<li><p>Get container process
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ <span class="nb">alias</span> <span class="nv">dps</span><span class="o">=</span><span class="s2">&#34;docker ps&#34;</span></code></pre></div></p></li>
+
+<li><p>Get process included stop container
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ <span class="nb">alias</span> <span class="nv">dpa</span><span class="o">=</span><span class="s2">&#34;docker ps -a&#34;</span></code></pre></div></p></li>
+
+<li><p>Get images
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ <span class="nb">alias</span> <span class="nv">di</span><span class="o">=</span><span class="s2">&#34;docker images&#34;</span></code></pre></div></p></li>
+
+<li><p>Stop and Remove all containers
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ <span class="nb">alias</span> <span class="nv">drmf</span><span class="o">=</span><span class="s1">&#39;docker stop $(docker ps -a -q) \
+</span><span class="s1">&amp;&amp; docker rm $(docker ps -a -q)&#39;</span></code></pre></div></p></li>
+
+<li><p>Run deamonized container, e.g., $dkd base /bin/echo hi_there
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ <span class="nb">alias</span> <span class="nv">dkd</span><span class="o">=</span><span class="s2">&#34;docker run -d -P&#34;</span></code></pre></div>
+<code>*Note: This alias may be recreated as function. See below</code></p></li>
+
+<li><p>Run interactive container, e.g., $dki base /bin/bash
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ <span class="nb">alias</span> <span class="nv">dki</span><span class="o">=</span><span class="s1">&#39;docker run -i -t -P&#39;</span></code></pre></div>
+<code>*Note: This alias may be recreated as function. See below</code></p></li>
+
+<li><p>Execute interactive container, e.g., $dex base /bin/bash
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ <span class="nb">alias</span> <span class="nv">dex</span><span class="o">=</span><span class="s2">&#34;docker exec -i -t&#34;</span></code></pre></div></p></li>
+</ul>
+
+<p><em>Functions:</em></p>
+
+<ul>
+<li><p>Stop all containers
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ dstop<span class="o">()</span> <span class="o">{</span> docker stop <span class="k">$(</span>docker ps -a -q<span class="k">)</span><span class="p">;</span> <span class="o">}</span></code></pre></div></p></li>
+
+<li><p>Start all containers
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ dstart<span class="o">()</span> <span class="o">{</span> docker start <span class="k">$(</span>docker ps -a -q<span class="k">)</span><span class="p">;</span> <span class="o">}</span></code></pre></div></p></li>
+
+<li><p>Remove all containers
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ drm<span class="o">()</span> <span class="o">{</span> docker rm <span class="k">$(</span>docker ps -a -q<span class="k">)</span><span class="p">;</span> <span class="o">}</span></code></pre></div></p></li>
+
+<li><p>Remove all images
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ dri<span class="o">()</span> <span class="o">{</span> docker rmi <span class="k">$(</span>docker images -q<span class="k">)</span><span class="p">;</span> <span class="o">}</span></code></pre></div></p></li>
+
+<li><p>Dockerfile build, e.g., $dbu user/test
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ dbu<span class="o">()</span> <span class="o">{</span> docker build -t<span class="o">=</span><span class="nv">$1</span> .<span class="p">;</span> <span class="o">}</span></code></pre></div></p></li>
+
+<li><p>Show all alias related docker
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ daliases<span class="o">()</span> <span class="o">{</span> <span class="nb">alias</span> <span class="p">|</span> grep <span class="s1">&#39;docker&#39;</span> <span class="p">|</span> <span class="se">\
+</span><span class="se"></span>  sed <span class="s2">&#34;s/^\([^=]*\)=\(.*\)/\1 =&gt; \2/&#34;</span><span class="p">|</span> <span class="se">\
+</span><span class="se"></span>  sed <span class="s2">&#34;s/[&#39;|\&#39;]//g&#34;</span> <span class="p">|</span> sort<span class="p">;</span> <span class="o">}</span></code></pre></div></p></li>
+
+<li><p>Bash into running container
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ dbash<span class="o">()</span> <span class="o">{</span> docker <span class="nb">exec</span> -it <span class="k">$(</span>docker ps -aqf <span class="s2">&#34;name=</span><span class="nv">$1</span><span class="s2">&#34;</span><span class="k">)</span> bash<span class="p">;</span> <span class="o">}</span></code></pre></div></p></li>
+
+<li><p>Run deamonized container, e.g., $dkd base
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ dkd<span class="o">()</span> <span class="o">{</span> docker run --name <span class="nv">$1</span> -d -P <span class="nv">$1</span><span class="p">;</span> <span class="o">}</span></code></pre></div></p></li>
+
+<li><p>Run interactive container, e.g., $dki base /bin/bash
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ dki<span class="o">()</span> <span class="o">{</span> docker run --name <span class="nv">$1</span> -i -t -P <span class="nv">$1</span> <span class="nv">$2</span><span class="p">;</span> <span class="o">}</span></code></pre></div></p></li>
+</ul>
+
+<p>The next part is on the way&hellip;<br/><br/><em>Thanks for your time&hellip;</em></p>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://dgtekmate.ga/post/2017-08-18-dn-changed/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://dgtekmate.ga/post/2017-08-18-dn-changed/">Blog Domain Name changed</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://dgtekmate.ga/post/2017-11-21-docker-and-centos7-p2/">Docker and CentOS 7 (Part II)</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://dgtekmate.ga/post/2017-11-21-docker-and-centos7-p2/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'dimig';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://dgtekmate.ga/js/ui.js"></script>
+<script src="http://dgtekmate.ga/js/menus.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+

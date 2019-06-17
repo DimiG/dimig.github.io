@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  
+
+  <title>Qt static compilation for Windows &middot; OwnBlog from DimiG</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+  <link rel="alternate" type="application/rss+xml" title="OwnBlog from DimiG" href="http://dgtekmate.ga/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/Docker.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://dgtekmate.ga/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="http://dgtekmate.ga/css/solarized-dark.css">
+    
+  
+    
+        <link rel="stylesheet" href="http://dgtekmate.ga/css/custom.css">
+    
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://dgtekmate.ga/">OwnBlog</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://dgtekmate.ga/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/akaDimiG" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 DimiG<br>All rights reserved</small>
+  </div>
+  <div class="small-print">
+    
+    
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Qt static compilation for Windows</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>30 Mar 2016</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="http://dgtekmate.ga/topics/technical">Technical</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://dgtekmate.ga/tags/qt">Qt</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>In this article, I have decided to talk a little bit about programming stuff. In programming forums I often to see the question - &ldquo;How to make the static compilation in <a href="http://www.qt.io">Qt</a>&rdquo;. What is <a href="http://www.qt.io">Qt</a>? <a href="http://www.qt.io">Qt</a> is a cross-platform application framework that is widely used for developing application software that can be run on various software and hardware platforms with little or no change in the underlying codebase, while still being a native application with the capabilities and speed thereof. <a href="http://www.qt.io">Qt</a> is currently being developed both by the <a href="http://www.qt.io">Qt Company</a>, a subsidiary of <a href="http://www.digia.com/en/">Digia</a>.</p>
+
+<p>Now I&rsquo;ll give some links and will give some little explanation based on my own experience. Feel free to comment it below.</p>
+
+<p>First of all you have to decide which compiler you&rsquo;ll use for <a href="http://www.qt.io">Qt</a> (<a href="http://mingw.org">MinGW</a> or <a href="https://www.visualstudio.com/">MSVC</a>). This solution is working only for <em>Windows</em> platform only. I use the <strong>MinGW (Minimalist GNU for Windows)</strong>, so I limited by <strong>32bit</strong> version and can&rsquo;t use <strong>64bit</strong> one. <a href="http://www.qt.io">Qt</a> officially setup only <strong>32bit</strong> version of <a href="http://mingw.org">MinGW</a>. How to use the <a href="https://www.visualstudio.com/">MSVC</a> for static compilation I don&rsquo;t know. If you have experience feel free to write in comments below.</p>
+
+<p><em>Long time ago</em>, my programming trainer told us: <strong><em>&ldquo;If you have questions - read documentation&rdquo;</em></strong>. Fortunately there is brief official documentation how to do it <a href="http://wiki.qt.io/Building_a_static_Qt_for_Windows_using_MinGW">HERE</a>.</p>
+
+<p>Compile such huge project as <strong>Qt</strong> is complicated task and it takes a lot of time to do. I do compilation on my computer during the half day. That is why the official documentation offer to use the script. Because of you use <em>Windows</em> it is logical to use the <a href="https://msdn.microsoft.com/en-us/powershell/mt173057.aspx">PowerShell</a> script for that. This script is possible to download from official <a href="https://sourceforge.net">SourceForge</a> project of <a href="https://sourceforge.net/p/qtlmovie/code/ci/master/tree/build/">THIS</a> script developer - <strong><em>Thierry Lelegard</em></strong>. (See in the list below). It calls <strong><em><a href="https://sourceforge.net/p/qtlmovie/code/ci/master/tree/build/">windows-build-qt-static.ps1</a></em></strong>.</p>
+
+<p>Unfortunately <a href="https://sourceforge.net/p/qtlmovie/code/ci/master/tree/build/">THIS</a> script didn&rsquo;t work for me, so I had to tweak it a little. ;) Maybe you&rsquo;ll be more lucky, cause author is still update it.</p>
+
+<p>Also, don&rsquo;t forget to setup the <a href="http://www.7-zip.org">7-zip</a> archiver and setup it on your system before you&rsquo;ll try to run this script. Create the <code>C:\Qt\Static</code> directory and check the <a href="http://www.qt.io">Qt</a> static environment (see <a href="http://wiki.qt.io/Building_a_static_Qt_for_Windows_using_MinGW">documentation</a>). Check the link to <a href="http://www.qt.io">Qt</a> <a href="http://download.qt.io/official_releases/qt/">source</a> code. It <strong>MUST</strong> agree with your installed version of <a href="http://www.qt.io">Qt</a> and <a href="http://mingw.org">MinGW</a> compiler version which <strong>MUST</strong> be installed via official <strong><em>Qt Maintenance Tool</em></strong> located on your system.</p>
+
+<p>As you see the static compilation is <strong>NOT</strong> easy to do, but this beautiful script is saving our days. Thanks to <strong><em>Thierry</em></strong>. :)</p>
+
+<p>I run this script from inside the <code>C:\Qt\Static</code>. Here is my <code>Static</code> directory structure for version <strong>5.6.0</strong>:
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">Static/
+├── 5.6.0
+│   ├── bin
+│   ├── doc
+│   ├── include
+│   ├── lib
+│   ├── mkspecs
+│   ├── plugins
+│   ├── qml
+│   └── translations
+└── src</code></pre></div></p>
+
+<p><em>Good LUCK&hellip;</em></p>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://dgtekmate.ga/post/2016-03-29-netapp-r200-tips-tricks-02/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://dgtekmate.ga/post/2016-03-29-netapp-r200-tips-tricks-02/">NetApp R200 Tips &amp; Tricks</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://dgtekmate.ga/post/2016-10-25-remote-editing/">Emacs &amp; Vim remote editing under Cygwin</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://dgtekmate.ga/post/2016-10-25-remote-editing/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'dimig';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://dgtekmate.ga/js/ui.js"></script>
+<script src="http://dgtekmate.ga/js/menus.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+

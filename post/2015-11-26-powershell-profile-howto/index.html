@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  
+
+  <title>PowerShell profile HowTo &middot; OwnBlog from DimiG</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+  <link rel="alternate" type="application/rss+xml" title="OwnBlog from DimiG" href="http://dgtekmate.ga/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/Docker.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://dgtekmate.ga/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="http://dgtekmate.ga/css/solarized-dark.css">
+    
+  
+    
+        <link rel="stylesheet" href="http://dgtekmate.ga/css/custom.css">
+    
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://dgtekmate.ga/">OwnBlog</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://dgtekmate.ga/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/akaDimiG" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 DimiG<br>All rights reserved</small>
+  </div>
+  <div class="small-print">
+    
+    
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>PowerShell profile HowTo</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>26 Nov 2015</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="http://dgtekmate.ga/topics/technical">Technical</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://dgtekmate.ga/tags/powershell">PowerShell</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>When I work on Windows platform from time to time I prefer to use the <a href="https://msdn.microsoft.com/en-us/powershell">PowerShell</a>. The <em>PowerShell</em> is an automation platform and scripting language for <em>Windows</em> and <em>Windows Server</em> that allows you to simplify the management of your systems. Unlike other text-based shells, <em>PowerShell</em> harnesses the power of the <em>.NET</em> Framework, providing rich objects and a massive set of built-in functionality for taking control of your Windows environments.</p>
+
+<p>Of course there is plenty of documentation how to use it. Here I&rsquo;ll give only short tips and hope it will be helpful in daily work. The <em>PowerShell</em> is not a state of art, but it is a native tool for daily automation tasks.
+The <em>PowerShell</em> is usually pre-installed on Windows platform (Windows 7,8,10). The best way is to update it to the fresh version manually.
+To start working with <em>PowerShell</em> on your platform you need to do couple of things:<br/>
+<strong>1.</strong> Set the execution policy;<br/>
+<strong>2.</strong> Create the profile file for convenient use
+Let&rsquo;s have a look on this in more detail.</p>
+
+<p>All system manipulations with <em>PowerShell</em> configuration need to be executed inside the <em>PowerShell</em> console in <em>Administrator</em> mode.
+<strong>Profiles.ps1</strong> is a script file. By default YOU CANNOT RUN any scripts. This is because the <em>execution policy</em> is set to <em>Restricted</em>. Without making the following configuration change you may get an ERROR message:<br/><strong>&lsquo;The execution of scripts is disabled&rsquo;</strong>.</p>
+
+<p>In Windows search field input <strong>Windows PowerShell</strong>, highlight it, press <strong>Ctrl+Shift+Enter</strong> and confirm the <strong>Administrator</strong> mode.</p>
+
+<p>As soon as you will be in <em>Administrator</em> mode console please <em>Enter</em>:
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">PS</span><span class="p">&gt;</span> <span class="nb">Set-ExecutionPolicy</span> <span class="n">RemoteSigned</span></code></pre></div></p>
+
+<p>The next step is to check if profile file exist:
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">PS</span><span class="p">&gt;</span> <span class="nb">Test-Path</span> <span class="nv">$PROFILE</span></code></pre></div></p>
+
+<p>If you see &ldquo;False&rdquo; then create one:
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">PS</span><span class="p">&gt;</span> <span class="nb">New-Item</span> <span class="n">-path</span> <span class="nv">$PROFILE</span> <span class="n">-type</span> <span class="n">file</span> <span class="err">–</span><span class="n">force</span></code></pre></div></p>
+
+<p>If you want list the file:
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">PS</span><span class="p">&gt;</span> <span class="n">gc</span> <span class="nv">$PROFILE</span></code></pre></div></p>
+
+<p>I recommend to edit this file by <em>Windows PowerShell ISE (Integrated Scripting Engine)</em> which is already pre-installed on your system:
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">PS</span><span class="p">&gt;</span> <span class="n">ise</span> <span class="nv">$PROFILE</span></code></pre></div></p>
+
+<p>If you prefer to use common profile file for all users and all hosts you can create it by:
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">PS</span><span class="p">&gt;</span> <span class="nb">New-Item</span> <span class="n">-path</span> <span class="nv">$PROFILE</span><span class="p">.</span><span class="n">AllUsersAllHosts</span> <span class="n">-type</span> <span class="n">file</span> <span class="err">–</span><span class="n">force</span></code></pre></div></p>
+
+<p>And edit it by:
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">PS</span><span class="p">&gt;</span> <span class="n">ise</span> <span class="nv">$PROFILE</span><span class="p">.</span><span class="n">AllUsersAllHosts</span></code></pre></div></p>
+
+<p>The last one. If you wanna create the own aliases, here is example how to do it. Let&rsquo;s create the alias for rapid exit by <strong>q</strong> letter:
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="cm">&lt;# Main Profile #&gt;</span>
+<span class="c"># Set Aliases</span>
+<span class="nb">Set-Alias</span> <span class="n">q</span> <span class="n">quit</span>
+<span class="c"># Set Functions</span>
+<span class="k">function</span> <span class="n">quit</span> <span class="p">{</span><span class="n">exit</span><span class="p">}</span>
+<span class="k">function</span> <span class="n">ll</span> <span class="p">{</span><span class="nb">Get-ChildItem</span> <span class="n">-Force</span><span class="p">}</span>
+<span class="k">function</span> <span class="n">PSadmin</span> <span class="p">{</span><span class="nb">Start-Process</span> <span class="n">powershell</span> <span class="n">-Verb</span> <span class="n">runAs</span><span class="p">}</span></code></pre></div></p>
+
+<p>The <strong>ll</strong> alias will list the hidden files. <strong>PSadmin</strong> will run the <em>PowerShell</em> in <em>Administrator</em> mode also.<br/><br/>Have a good day.</p>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://dgtekmate.ga/post/2015-10-19-centos-update-nokernel/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://dgtekmate.ga/post/2015-10-19-centos-update-nokernel/">CentOS without kernel update</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://dgtekmate.ga/post/2015-12-01-powershell-remoting-howto/">PowerShell remoting HowTo</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://dgtekmate.ga/post/2015-12-01-powershell-remoting-howto/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'dimig';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://dgtekmate.ga/js/ui.js"></script>
+<script src="http://dgtekmate.ga/js/menus.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+

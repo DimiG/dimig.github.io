@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  
+
+  <title>Robust File Copy for Windows &middot; OwnBlog from DimiG</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+  <link rel="alternate" type="application/rss+xml" title="OwnBlog from DimiG" href="http://dgtekmate.ga/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/Docker.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://dgtekmate.ga/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="http://dgtekmate.ga/css/solarized-dark.css">
+    
+  
+    
+        <link rel="stylesheet" href="http://dgtekmate.ga/css/custom.css">
+    
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://dgtekmate.ga/">OwnBlog</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://dgtekmate.ga/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/akaDimiG" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 DimiG<br>All rights reserved</small>
+  </div>
+  <div class="small-print">
+    
+    
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Robust File Copy for Windows</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>16 Feb 2016</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="http://dgtekmate.ga/topics/technical">Technical</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://dgtekmate.ga/tags/robocopy">Robocopy</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>Recently I had a problem with the <em>file media server</em> when one of the disk in disk array is down. In this case every server degrade the own disk speed, cause it has to recover the data from the broken one. The problem was that I have thousands of important files <em>(&gt;1Gb)</em> there which I can&rsquo;t allow to lose. Disk rebuild is risky cause if during rebuild process the second hard drive down - you may lose your data very easy. The server and clients working on <em>Windows</em> platform. If I start save material to the local hard drives by <em>Windows</em> copy I get <em>Windows</em> error, cause transmission interrupted by server frequently. Other side I want to be sure that my local copy reflect the files location on the server.</p>
+
+<p>I remembered that there is a good program for such purposes on every <em>Windows</em> system which calls <a href="https://en.wikipedia.org/wiki/Robocopy">Robocopy</a>. It saved my days.</p>
+
+<p>&ldquo;<a href="https://en.wikipedia.org/wiki/Robocopy">Robocopy</a>, or <strong>Robust File Copy</strong>, is a command-line directory and/or file replication utility. <em>Robocopy</em> functionally replaces <em>Xcopy</em>, with more options. It has been available as part of the <em>Windows Resource Kit</em> starting with <em>Windows NT 4.0</em>, and was first introduced as a standard feature in <em>Windows Vista</em> and <em>Windows Server 2008</em>.&rdquo;</p>
+
+<p>The advantages of this <em>Microsoft</em> program that it allows mirror the files and resume copy of broken connections. Ability to tolerate network interruptions and resume copying is main feature for me. (Incomplete files are marked with a date stamp of <em>1970-01-01</em> and contain a recovery record so <em>Robocopy</em> knows where to continue from). <em>Robocopy</em> does not copy open files. Even Robocopy&rsquo;s Backup mode will not touch those files. Therefore, <em>Robocopy</em> is not useful for backing up live operating system volumes. Also Robocopy&rsquo;s &ldquo;inter-packet gap&rdquo; (IPG) option allows some control over the network bandwidth used in a session cause broken file server slow down connections.</p>
+
+<p>Below I&rsquo;ll give you some useful keys for this program. I used this in my <a href="https://msdn.microsoft.com/en-us/powershell/mt173057.aspx">PowerShell</a> script to automate my tasks:
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">PS</span> <span class="n">C</span><span class="err">:</span><span class="p">\&gt;</span> <span class="n">Robocopy</span> <span class="n">SrcPath</span> <span class="n">DestPath</span> <span class="p">/</span><span class="n">MIR</span> <span class="p">/</span><span class="n">Z</span> <span class="p">/</span><span class="n">XJ</span> <span class="p">/</span><span class="n">FFT</span> <span class="p">/</span><span class="n">IPG</span><span class="err">:</span><span class="n">30</span> <span class="p">/</span><span class="n">R</span><span class="err">:</span><span class="n">13</span> <span class="p">/</span><span class="n">TEE</span></code></pre></div>
+This example resume connection of large files and make a mirror. <code>IPG</code> gives delay in 30 milliseconds and <code>Z</code> is resume option. <code>R</code> means how much retries you need before pass. The <code>R</code> option gives you possibility to postpone download of large files and copy all small ones. Please keep attention to <code>SrcPath</code> <code>DestPath</code>. IF YOU GIVE THE WRONG DIRECTION THE MIRROR FUNCTION ERASE ALL YOUR FILES!</p>
+
+<p>This example enable <em>multithreaded</em> copying for fast connections:
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">PS</span> <span class="n">C</span><span class="err">:</span><span class="p">\&gt;</span> <span class="n">Robocopy</span> <span class="n">SourcePath</span> <span class="n">DestPath</span> <span class="p">/</span><span class="n">MIR</span> <span class="p">/</span><span class="n">XJ</span> <span class="p">/</span><span class="n">FFT</span> <span class="p">/</span><span class="n">MT</span> <span class="p">/</span><span class="n">R</span><span class="err">:</span><span class="n">7</span> <span class="p">/</span><span class="n">TEE</span></code></pre></div></p>
+
+<p>The last example DO NOTHING, just shows you what will be DONE (<code>L</code> option). Very useful to check if your mirroring direction is correct:
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">PS</span> <span class="n">C</span><span class="err">:</span><span class="p">\&gt;</span> <span class="n">Robocopy</span> <span class="n">SourcePath</span> <span class="n">DestPath</span> <span class="p">/</span><span class="n">MIR</span> <span class="p">/</span><span class="n">XJ</span> <span class="p">/</span><span class="n">FFT</span> <span class="p">/</span><span class="n">R</span><span class="err">:</span><span class="n">7</span> <span class="p">/</span><span class="n">TEE</span> <span class="p">/</span><span class="n">L</span></code></pre></div></p>
+
+<p><em>Have a good day&hellip;</em></p>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://dgtekmate.ga/post/2016-02-02-emacs-strip/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://dgtekmate.ga/post/2016-02-02-emacs-strip/">Emacs strip CR(^M)</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://dgtekmate.ga/post/2016-03-23-netapp-r200-volsetup-01/">NetApp R200 volume setup procedure</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://dgtekmate.ga/post/2016-03-23-netapp-r200-volsetup-01/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'dimig';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://dgtekmate.ga/js/ui.js"></script>
+<script src="http://dgtekmate.ga/js/menus.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+

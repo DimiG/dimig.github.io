@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Qt on OwnBlog from DimiG</title>
+    <link>http://dgtekmate.ga/tags/qt/</link>
+    <description>Recent content in Qt on OwnBlog from DimiG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 DimiG&lt;br&gt;All rights reserved</copyright>
+    <lastBuildDate>Wed, 30 Mar 2016 11:00:00 +0300</lastBuildDate>
+    
+	<atom:link href="http://dgtekmate.ga/tags/qt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Qt static compilation for Windows</title>
+      <link>http://dgtekmate.ga/post/2016-03-30-qt-static-mingw-01/</link>
+      <pubDate>Wed, 30 Mar 2016 11:00:00 +0300</pubDate>
+      
+      <guid>http://dgtekmate.ga/post/2016-03-30-qt-static-mingw-01/</guid>
+      <description>&lt;p&gt;In this article, I have decided to talk a little bit about programming stuff. In programming forums I often to see the question - &amp;ldquo;How to make the static compilation in &lt;a href=&#34;http://www.qt.io&#34;&gt;Qt&lt;/a&gt;&amp;rdquo;. What is &lt;a href=&#34;http://www.qt.io&#34;&gt;Qt&lt;/a&gt;? &lt;a href=&#34;http://www.qt.io&#34;&gt;Qt&lt;/a&gt; is a cross-platform application framework that is widely used for developing application software that can be run on various software and hardware platforms with little or no change in the underlying codebase, while still being a native application with the capabilities and speed thereof. &lt;a href=&#34;http://www.qt.io&#34;&gt;Qt&lt;/a&gt; is currently being developed both by the &lt;a href=&#34;http://www.qt.io&#34;&gt;Qt Company&lt;/a&gt;, a subsidiary of &lt;a href=&#34;http://www.digia.com/en/&#34;&gt;Digia&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now I&amp;rsquo;ll give some links and will give some little explanation based on my own experience. Feel free to comment it below.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

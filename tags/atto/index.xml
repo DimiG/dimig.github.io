@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ATTO on OwnBlog from DimiG</title>
+    <link>http://dgtekmate.ga/tags/atto/</link>
+    <description>Recent content in ATTO on OwnBlog from DimiG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 DimiG&lt;br&gt;All rights reserved</copyright>
+    <lastBuildDate>Fri, 16 Oct 2015 11:00:00 +0300</lastBuildDate>
+    
+	<atom:link href="http://dgtekmate.ga/tags/atto/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ATTO Celerity setup in OS X El Capitan</title>
+      <link>http://dgtekmate.ga/post/2015-10-16-atto-celerity-setup/</link>
+      <pubDate>Fri, 16 Oct 2015 11:00:00 +0300</pubDate>
+      
+      <guid>http://dgtekmate.ga/post/2015-10-16-atto-celerity-setup/</guid>
+      <description>&lt;p&gt;In my posts I prefer to use the information from my &lt;em&gt;Own experience&lt;/em&gt;. Recently I had a task to install the &lt;em&gt;OS X El Capitan&lt;/em&gt; onto the old &lt;em&gt;Mac Pro&lt;/em&gt; with Fiber Channel Storage array.
+This system used the &lt;em&gt;ATTO Celerity&lt;/em&gt; Fiber Channel card &lt;strong&gt;FC-42ES&lt;/strong&gt; which has been &lt;em&gt;discontinued&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  
+
+  <title>PowerShell remoting HowTo &middot; OwnBlog from DimiG</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://dgtekmate.ga/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+  <link rel="alternate" type="application/rss+xml" title="OwnBlog from DimiG" href="http://dgtekmate.ga/index.xml" />
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/Docker.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://dgtekmate.ga/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="http://dgtekmate.ga/css/solarized-dark.css">
+    
+  
+    
+        <link rel="stylesheet" href="http://dgtekmate.ga/css/custom.css">
+    
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://dgtekmate.ga/">OwnBlog</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://dgtekmate.ga/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://dgtekmate.ga/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/akaDimiG" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019 DimiG<br>All rights reserved</small>
+  </div>
+  <div class="small-print">
+    
+    
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>PowerShell remoting HowTo</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>01 Dec 2015</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="http://dgtekmate.ga/topics/technical">Technical</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://dgtekmate.ga/tags/powershell">PowerShell</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>I continue my articles regarding the <a href="https://msdn.microsoft.com/en-us/powershell">PowerShell</a> setup. This one will be dedicated to Remoting setup. <em>PowerShell Remoting</em> allows you get access the full <em>PowerShell</em> sessions on remote <em>Windows</em> systems.</p>
+
+<p>By default the <em>PowerShell</em> is locked-down, so you’ll have to enable <em>PowerShell Remoting</em> before using it. Setup process is a little bit confusing if you’re using a <em>WORKGROUP</em> with a home network and <em>NO Domain</em>.</p>
+
+<p>Setup the <em>PowerShell Remoting</em> you have to:<br/>
+<strong>1.</strong> Enabling <em>PowerShell Remoting</em>;<br/>
+<strong>2.</strong> Workgroup Setting Up;<br/>
+<strong>3.</strong> Testing the Connection;<br/>
+<strong>4.</strong> Starting a Remote Session.<br/><br/>
+<em>OK</em>, Let&rsquo;s go to make it real.</p>
+
+<p>All system manipulations with <em>PowerShell</em> configuration on remote computer need to be executed inside the <em>PowerShell</em> console in <em>Administrator</em> mode.
+Look at my previous posts to get info how to do it.</p>
+
+<p>To enable PowerShell Remoting, run the following command:
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">PS</span><span class="p">&gt;</span> <span class="nb">Enable-PSRemoting</span> <span class="n">-Force</span></code></pre></div>
+This command starts the <strong>WinRM</strong> service, configures it to start automatically on your system, and creates a <strong>FIREWALL</strong> rules that allows incoming connections. The <strong>-Force</strong> part of the command tells <em>PowerShell</em> to perform these actions without prompting you for every step.</p>
+
+<p>If you have local computers without <em>Domain</em> you have to do the extra steps. Run the <em>Enable-PSRemoting -Force</em> command on the computer you want to connect from. On both computers, configure the <em>TrustedHosts</em> setting so the computers will <em>trust</em> each other. Any computer will connect by this command:
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">PS</span><span class="p">&gt;</span> <span class="nb">Set-Item</span> <span class="n">wsman</span><span class="err">:</span><span class="p">\</span><span class="n">localhost</span><span class="p">\</span><span class="n">client</span><span class="p">\</span><span class="n">trustedhosts</span> <span class="p">*</span></code></pre></div>
+You can also replace the <code>*</code> with a comma-separated list of IP addresses or computer names.</p>
+
+<p>On both computers, restart the <strong>WinRM</strong> service to give your new settings will take effect:
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">PS</span><span class="p">&gt;</span> <span class="nb">Restart-Service</span> <span class="n">WinRM</span></code></pre></div></p>
+
+<p>Now we can test the connection by:
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">PS</span><span class="p">&gt;</span> <span class="nb">Test-WsMan</span> <span class="n">COMPUTER</span></code></pre></div>
+The <strong>COMPUTER</strong> name needs to replace on target computer name. If <strong>NO ERROR</strong> messages lets go to the last step.</p>
+
+<p>Start the remote session is possible by this command:
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">PS</span><span class="p">&gt;</span> <span class="nb">Enter-PSSession</span> <span class="n">-ComputerName</span> <span class="n">COMPUTER</span> <span class="n">-Credential</span> <span class="n">USER</span></code></pre></div>
+Replace the <strong>COMPUTER</strong> and <strong>USER</strong> names to your destination computer parameters.</p>
+
+<p>If you prefer to invoke the single command on remote computer do this by:
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">PS</span><span class="p">&gt;</span> <span class="nb">Invoke-Command</span> <span class="n">-ComputerName</span> <span class="n">COMPUTER</span> <span class="n">-ScriptBlock</span>
+ <span class="p">&gt;&gt;</span> <span class="p">{</span> <span class="n">COMMAND</span> <span class="p">}</span> <span class="n">-credential</span> <span class="n">USERNAME</span></code></pre></div></p>
+
+<p><strong><em>Additional Notes:</em></strong> If you enter into interactive session by <em>Enter-PSSession</em> command your profile file on remote computer won&rsquo;t be loaded, so you won&rsquo;t be able to use your personal aliases and functions there. So, you have to make additional tweaks for it.</p>
+
+<p>You have to create the additional profile on the target machine which will be loaded on enter. On the target computer, where <em>profile.ps1</em> contains all your functions give such command:
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">PS</span><span class="p">&gt;</span> <span class="nb">Register-PSSessionConfiguration</span> <span class="n">-Name</span> <span class="n">OwnProfile</span>
+<span class="p">&gt;&gt;</span> <span class="n">-StartupScript</span> <span class="nv">$PsHome</span><span class="p">\</span><span class="n">profile</span><span class="p">.</span><span class="n">ps1</span></code></pre></div>
+<strong>OwnProfile</strong> is the name of new remote configuration.</p>
+
+<p>So, now the remote command will looks like this:
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">PS</span><span class="p">&gt;</span> <span class="nb">Enter-PSSession</span> <span class="n">-ComputerName</span> <span class="n">COMPUTER</span>
+<span class="p">&gt;&gt;</span> <span class="n">-ConfigurationName</span> <span class="n">OwnProfile</span> <span class="n">-Credential</span> <span class="n">USERNAME</span></code></pre></div></p>
+
+<p>By default the <em>PowerShell Remoting</em> allow <strong>administrators group</strong> connection only. If you plan to get remote access for users or any responsible staff you can configure it on remote computer by this command:
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="n">PS</span><span class="p">&gt;</span> <span class="nb">Set-PSSessionConfiguration</span> <span class="n">-Name</span> <span class="n">Microsoft</span><span class="p">.</span><span class="n">Powershell</span>
+<span class="p">&gt;&gt;</span> <span class="n">-ShowSecurityDescriptorUI</span></code></pre></div>
+Answer <strong><em>Yes</em></strong> for all questions. I don&rsquo;t publish the window screen-shot here cause you can do it easily by pop up panel in old <em>Windows</em> traditions. ;)</p>
+
+<p>If any questions - write in the comments below.<br/><br/>Have a nice day!</p>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://dgtekmate.ga/post/2015-11-26-powershell-profile-howto/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://dgtekmate.ga/post/2015-11-26-powershell-profile-howto/">PowerShell profile HowTo</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://dgtekmate.ga/post/2015-12-22-python-virtual-environment/">Python Virtual Environment</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://dgtekmate.ga/post/2015-12-22-python-virtual-environment/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'dimig';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://dgtekmate.ga/js/ui.js"></script>
+<script src="http://dgtekmate.ga/js/menus.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+
