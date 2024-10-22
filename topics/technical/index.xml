@@ -2,76 +2,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Technical on OwnBlog from DimiG</title>
-    <link>http://dgtekmate.ga/topics/technical/</link>
+    <link>http://dimig.github.io/topics/technical/</link>
     <description>Recent content in Technical on OwnBlog from DimiG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 DimiG&lt;br&gt;All rights reserved</copyright>
     <lastBuildDate>Thu, 23 Nov 2017 11:00:00 +0300</lastBuildDate>
     
-	<atom:link href="http://dgtekmate.ga/topics/technical/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://dimig.github.io/topics/technical/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Docker Bind Mounts on Windows 7</title>
-      <link>http://dgtekmate.ga/post/2017-11-23-docker-bind-mounts-windows7/</link>
+      <link>http://dimig.github.io/post/2017-11-23-docker-bind-mounts-windows7/</link>
       <pubDate>Thu, 23 Nov 2017 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2017-11-23-docker-bind-mounts-windows7/</guid>
+      <guid>http://dimig.github.io/post/2017-11-23-docker-bind-mounts-windows7/</guid>
       <description>&lt;p&gt;Work with &lt;a href=&#34;https://en.wikipedia.org/wiki/Docker_(software)&#34;&gt;Docker&lt;/a&gt; on &lt;em&gt;Windows 7&lt;/em&gt; has some specific differences. This technology targeted mostly to &lt;em&gt;Linux&lt;/em&gt; platform. Use &lt;em&gt;Mac OS&lt;/em&gt; or &lt;em&gt;Windows&lt;/em&gt; is not recommended for production servers. But it is good for software or even hardware developers. For them it is important to have access from &lt;em&gt;Docker container&lt;/em&gt; to local file system of host operating system. This way calls &lt;em&gt;Bind Mounts&lt;/em&gt;. In the current article we will discuss this question and how it works on &lt;em&gt;Windows 7&lt;/em&gt; platform.&lt;br&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Docker and CentOS 7 (Part II)</title>
-      <link>http://dgtekmate.ga/post/2017-11-21-docker-and-centos7-p2/</link>
+      <link>http://dimig.github.io/post/2017-11-21-docker-and-centos7-p2/</link>
       <pubDate>Tue, 21 Nov 2017 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2017-11-21-docker-and-centos7-p2/</guid>
+      <guid>http://dimig.github.io/post/2017-11-21-docker-and-centos7-p2/</guid>
       <description>&lt;p&gt;The second part of article &lt;strong&gt;Docker and CentOS 7&lt;/strong&gt; will highlight the question about &lt;a href=&#34;https://en.wikipedia.org/wiki/Docker_(software)&#34;&gt;Docker&lt;/a&gt; optimization for &lt;a href=&#34;https://en.wikipedia.org/wiki/CentOS&#34;&gt;CentOS&lt;/a&gt; production platform. Here is how.&lt;br&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Docker and CentOS 7 (Part I)</title>
-      <link>http://dgtekmate.ga/post/2017-10-27-docker-and-centos7-p1/</link>
+      <link>http://dimig.github.io/post/2017-10-27-docker-and-centos7-p1/</link>
       <pubDate>Fri, 27 Oct 2017 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2017-10-27-docker-and-centos7-p1/</guid>
+      <guid>http://dimig.github.io/post/2017-10-27-docker-and-centos7-p1/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Docker_(software)&#34;&gt;Docker&lt;/a&gt; is a quite new technology of software virtualization and step forward of virtual environment. &lt;a href=&#34;https://en.wikipedia.org/wiki/Docker_(software)&#34;&gt;Docker&lt;/a&gt; is different from classical &lt;a href=&#34;https://en.wikipedia.org/wiki/Virtual_machine&#34;&gt;virtual machines&lt;/a&gt; (VMs). More details about can be found in &lt;a href=&#34;https://docs.docker.com&#34;&gt;official docker documentation&lt;/a&gt;. This become popular last years and this may be important for &lt;em&gt;WEB programs developers&lt;/em&gt;, &lt;em&gt;system administrators&lt;/em&gt; or &lt;em&gt;system network engineers&lt;/em&gt;. I plan to publish series short articles about &lt;a href=&#34;https://en.wikipedia.org/wiki/Docker_(software)&#34;&gt;Docker technology&lt;/a&gt; tips. Some tips are developed by me, some not. The current one will be about aliases and functions in &lt;a href=&#34;https://en.wikipedia.org/wiki/Bash_(Unix_shell)&#34;&gt;BASH&lt;/a&gt;. &lt;em&gt;Lets go starting&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>MAC-OS cloning</title>
-      <link>http://dgtekmate.ga/post/2017-05-23-macoscloning/</link>
+      <link>http://dimig.github.io/post/2017-05-23-macoscloning/</link>
       <pubDate>Tue, 23 May 2017 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2017-05-23-macoscloning/</guid>
+      <guid>http://dimig.github.io/post/2017-05-23-macoscloning/</guid>
       <description>&lt;p&gt;Recently I had a task to clone the &lt;em&gt;Mac OS&lt;/em&gt; operating system with some pre-installed software to other &lt;em&gt;Mac Pro&lt;/em&gt; computers with almost same hardware configuration. To do it directly (Install OS, Install all necessary software) to every unit takes a lot of time. So, I have decided to install one unit and after clone it to other ones. Here I will describe the methods I have used.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Excellent scoop</title>
-      <link>http://dgtekmate.ga/post/2017-04-03-scoop/</link>
+      <link>http://dimig.github.io/post/2017-04-03-scoop/</link>
       <pubDate>Mon, 03 Apr 2017 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2017-04-03-scoop/</guid>
+      <guid>http://dimig.github.io/post/2017-04-03-scoop/</guid>
       <description>&lt;p&gt;Sorry my long absence in this &lt;em&gt;Blog&lt;/em&gt; writing. More age we have less time available for foreign affairs. In this blog I want to present the amazing command-line installer for &lt;em&gt;Windows&lt;/em&gt;. It calls &lt;a href=&#34;http://scoop.sh/&#34;&gt;scoop&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Emacs &amp; Vim remote editing under Cygwin</title>
-      <link>http://dgtekmate.ga/post/2016-10-25-remote-editing/</link>
+      <link>http://dimig.github.io/post/2016-10-25-remote-editing/</link>
       <pubDate>Tue, 25 Oct 2016 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2016-10-25-remote-editing/</guid>
+      <guid>http://dimig.github.io/post/2016-10-25-remote-editing/</guid>
       <description>&lt;p&gt;This article I want to dedicate to tricks for world famous text editors like &lt;a href=&#34;https://www.gnu.org/software/emacs/&#34;&gt;Emacs&lt;/a&gt; and &lt;a href=&#34;http://www.vim.org&#34;&gt;Vim&lt;/a&gt;. Sometimes there is a problem to edit a text file on a remote server. In this short article I&amp;rsquo;ll show you how.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Qt static compilation for Windows</title>
-      <link>http://dgtekmate.ga/post/2016-03-30-qt-static-mingw-01/</link>
+      <link>http://dimig.github.io/post/2016-03-30-qt-static-mingw-01/</link>
       <pubDate>Wed, 30 Mar 2016 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2016-03-30-qt-static-mingw-01/</guid>
+      <guid>http://dimig.github.io/post/2016-03-30-qt-static-mingw-01/</guid>
       <description>&lt;p&gt;In this article, I have decided to talk a little bit about programming stuff. In programming forums I often to see the question - &amp;ldquo;How to make the static compilation in &lt;a href=&#34;http://www.qt.io&#34;&gt;Qt&lt;/a&gt;&amp;rdquo;. What is &lt;a href=&#34;http://www.qt.io&#34;&gt;Qt&lt;/a&gt;? &lt;a href=&#34;http://www.qt.io&#34;&gt;Qt&lt;/a&gt; is a cross-platform application framework that is widely used for developing application software that can be run on various software and hardware platforms with little or no change in the underlying codebase, while still being a native application with the capabilities and speed thereof. &lt;a href=&#34;http://www.qt.io&#34;&gt;Qt&lt;/a&gt; is currently being developed both by the &lt;a href=&#34;http://www.qt.io&#34;&gt;Qt Company&lt;/a&gt;, a subsidiary of &lt;a href=&#34;http://www.digia.com/en/&#34;&gt;Digia&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Now I&amp;rsquo;ll give some links and will give some little explanation based on my own experience. Feel free to comment it below.&lt;/p&gt;</description>
@@ -79,19 +79,19 @@
     
     <item>
       <title>NetApp R200 Tips &amp; Tricks</title>
-      <link>http://dgtekmate.ga/post/2016-03-29-netapp-r200-tips-tricks-02/</link>
+      <link>http://dimig.github.io/post/2016-03-29-netapp-r200-tips-tricks-02/</link>
       <pubDate>Tue, 29 Mar 2016 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2016-03-29-netapp-r200-tips-tricks-02/</guid>
+      <guid>http://dimig.github.io/post/2016-03-29-netapp-r200-tips-tricks-02/</guid>
       <description>&lt;p&gt;This is &lt;em&gt;my second&lt;/em&gt; article about &lt;a href=&#34;http://www.netapp.com/us/&#34;&gt;NetApp&lt;/a&gt; &lt;strong&gt;R200&lt;/strong&gt; filer. I call it &lt;strong&gt;&lt;em&gt;Tips &amp;amp; Tricks&lt;/em&gt;&lt;/strong&gt; and going to add the useful commands for &lt;em&gt;Filer&lt;/em&gt; manipulation here. The updates regarding this theme will be added in this post if exist.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>NetApp R200 volume setup procedure</title>
-      <link>http://dgtekmate.ga/post/2016-03-23-netapp-r200-volsetup-01/</link>
+      <link>http://dimig.github.io/post/2016-03-23-netapp-r200-volsetup-01/</link>
       <pubDate>Wed, 23 Mar 2016 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2016-03-23-netapp-r200-volsetup-01/</guid>
+      <guid>http://dimig.github.io/post/2016-03-23-netapp-r200-volsetup-01/</guid>
       <description>&lt;p&gt;One month ago I had opportunity to play with old filer &lt;strong&gt;R200&lt;/strong&gt; from &lt;a href=&#34;http://www.netapp.com/us/&#34;&gt;NetApp&lt;/a&gt; company. &lt;em&gt;&lt;a href=&#34;http://www.netapp.com/us/&#34;&gt;NetApp Inc.&lt;/a&gt;&lt;/em&gt;, formerly &lt;em&gt;&lt;a href=&#34;http://www.netapp.com/us/&#34;&gt;Network Appliance Inc.&lt;/a&gt;&lt;/em&gt;, is a well known &lt;em&gt;American&lt;/em&gt; computer storage and data management company headquartered in &lt;em&gt;Sunnyvale&lt;/em&gt;, &lt;em&gt;California&lt;/em&gt;. &lt;em&gt;NetApp&lt;/em&gt; competes in the data-storage devices industry. In &lt;strong&gt;2009&lt;/strong&gt;, &lt;em&gt;NetApp&lt;/em&gt; ranked second in market capitalization in its industry behind &lt;em&gt;EMC Corporation&lt;/em&gt; and ahead of &lt;em&gt;Seagate Technology&lt;/em&gt;, &lt;em&gt;Western Digital&lt;/em&gt;, &lt;em&gt;Brocade&lt;/em&gt;, &lt;em&gt;Imation&lt;/em&gt;, and &lt;em&gt;Quantum&lt;/em&gt;. In spite of this model was discontinued and it doesn&amp;rsquo;t have support now by the company I have decided to resurrect it for technical purposes and files exchange inside our internal network.&lt;/p&gt;
 
 &lt;p&gt;I plan to create a couple of articles about this theme here. Look into archive of my &lt;em&gt;&lt;a href=&#34;http://dimig.ga/archive&#34;&gt;Blog&lt;/a&gt;&lt;/em&gt;. You will find additional posts here soon. If you find it interesting - let me know about in comments below. In spite of &lt;em&gt;NetApp&lt;/em&gt; documentation exist in the &lt;em&gt;Internet&lt;/em&gt; this article reflect my own experience. Let&amp;rsquo;s briefly describe what the system I have.&lt;/p&gt;</description>
@@ -99,10 +99,10 @@
     
     <item>
       <title>Robust File Copy for Windows</title>
-      <link>http://dgtekmate.ga/post/2016-02-16-robocopy/</link>
+      <link>http://dimig.github.io/post/2016-02-16-robocopy/</link>
       <pubDate>Tue, 16 Feb 2016 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2016-02-16-robocopy/</guid>
+      <guid>http://dimig.github.io/post/2016-02-16-robocopy/</guid>
       <description>&lt;p&gt;Recently I had a problem with the &lt;em&gt;file media server&lt;/em&gt; when one of the disk in disk array is down. In this case every server degrade the own disk speed, cause it has to recover the data from the broken one. The problem was that I have thousands of important files &lt;em&gt;(&amp;gt;1Gb)&lt;/em&gt; there which I can&amp;rsquo;t allow to lose. Disk rebuild is risky cause if during rebuild process the second hard drive down - you may lose your data very easy. The server and clients working on &lt;em&gt;Windows&lt;/em&gt; platform. If I start save material to the local hard drives by &lt;em&gt;Windows&lt;/em&gt; copy I get &lt;em&gt;Windows&lt;/em&gt; error, cause transmission interrupted by server frequently. Other side I want to be sure that my local copy reflect the files location on the server.&lt;/p&gt;
 
 &lt;p&gt;I remembered that there is a good program for such purposes on every &lt;em&gt;Windows&lt;/em&gt; system which calls &lt;a href=&#34;https://en.wikipedia.org/wiki/Robocopy&#34;&gt;Robocopy&lt;/a&gt;. It saved my days.&lt;/p&gt;</description>
@@ -110,10 +110,10 @@
     
     <item>
       <title>Emacs strip CR(^M)</title>
-      <link>http://dgtekmate.ga/post/2016-02-02-emacs-strip/</link>
+      <link>http://dimig.github.io/post/2016-02-02-emacs-strip/</link>
       <pubDate>Tue, 02 Feb 2016 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2016-02-02-emacs-strip/</guid>
+      <guid>http://dimig.github.io/post/2016-02-02-emacs-strip/</guid>
       <description>&lt;p&gt;Time to time I use the great old text editor &lt;a href=&#34;http://www.gnu.org/software/emacs&#34;&gt;Emacs&lt;/a&gt;. In spite of advanced age this reliable text editor competes with modern text editors and even some &lt;em&gt;IDEs&lt;/em&gt;. If you work with text files on different platforms you may encounter with &lt;em&gt;CR(^M)&lt;/em&gt; symbols on every line. This happen If you have a mix of lines that ends with &lt;em&gt;^M&lt;/em&gt; and lines that don’t.&lt;/p&gt;
 
 &lt;p&gt;Also if you see &lt;em&gt;^M&lt;/em&gt; in your file, you may have opened a file with &lt;em&gt;DOS-style&lt;/em&gt; line endings &lt;em&gt;(carriage return + line feed)&lt;/em&gt; while &lt;a href=&#34;http://www.gnu.org/software/emacs&#34;&gt;Emacs&lt;/a&gt; assumes it has &lt;em&gt;Unix-style&lt;/em&gt; line endings (line feed only). (The carriage-return character, sometimes abbreviated as &lt;em&gt;CR&lt;/em&gt;, is &lt;em&gt;^M&lt;/em&gt;. The line-feed character, sometimes abbreviated as &lt;em&gt;LF&lt;/em&gt;, is &lt;em&gt;^J&lt;/em&gt;)&lt;/p&gt;</description>
@@ -121,10 +121,10 @@
     
     <item>
       <title>Golang under Cygwin</title>
-      <link>http://dgtekmate.ga/post/2016-01-27-cygwin-go/</link>
+      <link>http://dimig.github.io/post/2016-01-27-cygwin-go/</link>
       <pubDate>Wed, 27 Jan 2016 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2016-01-27-cygwin-go/</guid>
+      <guid>http://dimig.github.io/post/2016-01-27-cygwin-go/</guid>
       <description>&lt;p&gt;The current article I have to write by two reasons. First - the &lt;a href=&#34;https://golang.org&#34;&gt;Go&lt;/a&gt; language developed by &lt;em&gt;Google&lt;/em&gt; becoming popular little by little. Second - there is &lt;strong&gt;NO&lt;/strong&gt; accurate information about how to setup &lt;em&gt;Go&lt;/em&gt; under &lt;a href=&#34;https://www.cygwin.com&#34;&gt;Cygwin&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&amp;ldquo;&lt;em&gt;Go&lt;/em&gt; also commonly referred to as &lt;em&gt;Golang&lt;/em&gt;, is a open source programming language developed at &lt;em&gt;Google&lt;/em&gt; in &lt;strong&gt;2007&lt;/strong&gt; by &lt;em&gt;Robert Griesemer&lt;/em&gt;, &lt;em&gt;Rob Pike&lt;/em&gt;, and &lt;em&gt;Ken Thompson&lt;/em&gt;. Designed primarily for systems programming, it is a compiled, statically typed language in the tradition of &lt;strong&gt;C&lt;/strong&gt; and &lt;strong&gt;C++&lt;/strong&gt;, with garbage collection, various safety features and CSP-style concurrent programming features added.&amp;rdquo;&lt;/p&gt;</description>
@@ -132,55 +132,55 @@
     
     <item>
       <title>UNIX pass under Cygwin</title>
-      <link>http://dgtekmate.ga/post/2016-01-25-cygwin-pass/</link>
+      <link>http://dimig.github.io/post/2016-01-25-cygwin-pass/</link>
       <pubDate>Mon, 25 Jan 2016 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2016-01-25-cygwin-pass/</guid>
+      <guid>http://dimig.github.io/post/2016-01-25-cygwin-pass/</guid>
       <description>&lt;p&gt;For any IT system administrators and specialists there is a headache to remember a lot of working passwords in daily work. As you probably know is safe to use the different ones for better security. There are many password managers which collect and encrypt your passwords locally or remotely. The best way if your password manager is simple and follow the &lt;em&gt;Unix&lt;/em&gt; philosophy. With &lt;a href=&#34;http://www.passwordstore.org&#34;&gt;pass&lt;/a&gt;, each password lives inside of a &lt;a href=&#34;https://www.gnupg.org&#34;&gt;GNU Privacy Guard&lt;/a&gt; (GnuPG, GPG) encrypted file whose file name is the title of the website or resource that requires the password.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>PostgreSQL under Cygwin</title>
-      <link>http://dgtekmate.ga/post/2015-12-31-cygwin-postgresql/</link>
+      <link>http://dimig.github.io/post/2015-12-31-cygwin-postgresql/</link>
       <pubDate>Thu, 31 Dec 2015 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2015-12-31-cygwin-postgresql/</guid>
+      <guid>http://dimig.github.io/post/2015-12-31-cygwin-postgresql/</guid>
       <description>&lt;p&gt;As I wrote below I use &lt;a href=&#34;https://www.cygwin.com&#34;&gt;Cygwin&lt;/a&gt; with &lt;em&gt;Windows&lt;/em&gt; platform to achieve the &lt;em&gt;Busi-do&lt;/em&gt; 😏. Yeah, I&amp;rsquo;m not looking for easy ways, really. To use the &lt;a href=&#34;https://www.cygwin.com&#34;&gt;Cygwin&lt;/a&gt; is not easy way, but it really works for many tasks. If you work with databases there are two ways. First is to setup database directly into the &lt;em&gt;Windows&lt;/em&gt;, the second is setup database into the &lt;a href=&#34;https://www.cygwin.com&#34;&gt;Cygwin&lt;/a&gt;. The first way is easiest one, but may &lt;em&gt;NOT&lt;/em&gt; working if you develop inside &lt;em&gt;Cygwin&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Python Virtual Environment</title>
-      <link>http://dgtekmate.ga/post/2015-12-22-python-virtual-environment/</link>
+      <link>http://dimig.github.io/post/2015-12-22-python-virtual-environment/</link>
       <pubDate>Tue, 22 Dec 2015 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2015-12-22-python-virtual-environment/</guid>
+      <guid>http://dimig.github.io/post/2015-12-22-python-virtual-environment/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;https://www.python.org&#34;&gt;Python&lt;/a&gt; programming is a real adventure. I prefer to use it for small projects or fast developing stuff. &lt;a href=&#34;https://www.python.org&#34;&gt;Python&lt;/a&gt; packages empower the language. Every task demands the own set of packages. So, it is a good idea to separate it for every task.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>PowerShell remoting HowTo</title>
-      <link>http://dgtekmate.ga/post/2015-12-01-powershell-remoting-howto/</link>
+      <link>http://dimig.github.io/post/2015-12-01-powershell-remoting-howto/</link>
       <pubDate>Tue, 01 Dec 2015 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2015-12-01-powershell-remoting-howto/</guid>
+      <guid>http://dimig.github.io/post/2015-12-01-powershell-remoting-howto/</guid>
       <description>&lt;p&gt;I continue my articles regarding the &lt;a href=&#34;https://msdn.microsoft.com/en-us/powershell&#34;&gt;PowerShell&lt;/a&gt; setup. This one will be dedicated to Remoting setup. &lt;em&gt;PowerShell Remoting&lt;/em&gt; allows you get access the full &lt;em&gt;PowerShell&lt;/em&gt; sessions on remote &lt;em&gt;Windows&lt;/em&gt; systems.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>PowerShell profile HowTo</title>
-      <link>http://dgtekmate.ga/post/2015-11-26-powershell-profile-howto/</link>
+      <link>http://dimig.github.io/post/2015-11-26-powershell-profile-howto/</link>
       <pubDate>Thu, 26 Nov 2015 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2015-11-26-powershell-profile-howto/</guid>
+      <guid>http://dimig.github.io/post/2015-11-26-powershell-profile-howto/</guid>
       <description>&lt;p&gt;When I work on Windows platform from time to time I prefer to use the &lt;a href=&#34;https://msdn.microsoft.com/en-us/powershell&#34;&gt;PowerShell&lt;/a&gt;. The &lt;em&gt;PowerShell&lt;/em&gt; is an automation platform and scripting language for &lt;em&gt;Windows&lt;/em&gt; and &lt;em&gt;Windows Server&lt;/em&gt; that allows you to simplify the management of your systems. Unlike other text-based shells, &lt;em&gt;PowerShell&lt;/em&gt; harnesses the power of the &lt;em&gt;.NET&lt;/em&gt; Framework, providing rich objects and a massive set of built-in functionality for taking control of your Windows environments.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>CentOS without kernel update</title>
-      <link>http://dgtekmate.ga/post/2015-10-19-centos-update-nokernel/</link>
+      <link>http://dimig.github.io/post/2015-10-19-centos-update-nokernel/</link>
       <pubDate>Mon, 19 Oct 2015 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2015-10-19-centos-update-nokernel/</guid>
+      <guid>http://dimig.github.io/post/2015-10-19-centos-update-nokernel/</guid>
       <description>&lt;p&gt;For my servers I prefer to use the &lt;em&gt;CentOS&lt;/em&gt; as operating system. It is reliable, professional and modern &lt;em&gt;Linux&lt;/em&gt; distribution which is aimed to the server platform usage.&lt;/p&gt;
 
 &lt;p&gt;Periodically appear the task to update the packages inside. The system package manager, which calls &lt;em&gt;Yum&lt;/em&gt;, allow to do it easily.&lt;/p&gt;</description>
@@ -188,20 +188,20 @@
     
     <item>
       <title>ATTO Celerity setup in OS X El Capitan</title>
-      <link>http://dgtekmate.ga/post/2015-10-16-atto-celerity-setup/</link>
+      <link>http://dimig.github.io/post/2015-10-16-atto-celerity-setup/</link>
       <pubDate>Fri, 16 Oct 2015 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2015-10-16-atto-celerity-setup/</guid>
+      <guid>http://dimig.github.io/post/2015-10-16-atto-celerity-setup/</guid>
       <description>&lt;p&gt;In my posts I prefer to use the information from my &lt;em&gt;Own experience&lt;/em&gt;. Recently I had a task to install the &lt;em&gt;OS X El Capitan&lt;/em&gt; onto the old &lt;em&gt;Mac Pro&lt;/em&gt; with Fiber Channel Storage array.
 This system used the &lt;em&gt;ATTO Celerity&lt;/em&gt; Fiber Channel card &lt;strong&gt;FC-42ES&lt;/strong&gt; which has been &lt;em&gt;discontinued&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Lftp mirror</title>
-      <link>http://dgtekmate.ga/post/2015-09-01-lftp-mirror/</link>
+      <link>http://dimig.github.io/post/2015-09-01-lftp-mirror/</link>
       <pubDate>Tue, 01 Sep 2015 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2015-09-01-lftp-mirror/</guid>
+      <guid>http://dimig.github.io/post/2015-09-01-lftp-mirror/</guid>
       <description>&lt;p&gt;The &lt;strong&gt;FTP&lt;/strong&gt; &lt;em&gt;File Transfer Protocol&lt;/em&gt; protocol is quite old. It was created in &lt;strong&gt;1971&lt;/strong&gt; and changed in &lt;strong&gt;1972&lt;/strong&gt; which was closed to modern version.
 Development of the Internet endangered using &lt;strong&gt;FTP&lt;/strong&gt; cause of the security weakness. Anyway this protocol is still usable in some production areas like &lt;em&gt;WEB design&lt;/em&gt;, &lt;em&gt;Post production&lt;/em&gt;, etc.
 As for me I prefer to stay away from &lt;strong&gt;FTP&lt;/strong&gt; and prefer the modern secured protocols, but in some cases I have to use it for a while.&lt;/p&gt;</description>
@@ -209,10 +209,10 @@ As for me I prefer to stay away from &lt;strong&gt;FTP&lt;/strong&gt; and prefer
     
     <item>
       <title>PowerShell Magazine</title>
-      <link>http://dgtekmate.ga/post/2015-08-20-powershell-mag/</link>
+      <link>http://dimig.github.io/post/2015-08-20-powershell-mag/</link>
       <pubDate>Thu, 20 Aug 2015 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2015-08-20-powershell-mag/</guid>
+      <guid>http://dimig.github.io/post/2015-08-20-powershell-mag/</guid>
       <description>&lt;p&gt;It is &lt;em&gt;NOT&lt;/em&gt; a fresh news and just was re-posted from my old &lt;a href=&#34;http://dimig.blogspot.ru&#34;&gt;blog&lt;/a&gt;.
 On &lt;em&gt;December 27, 2011&lt;/em&gt; I wrote the &lt;em&gt;&lt;a href=&#34;http://www.powershellmagazine.com/2011/12/27/powershell-linux-to-windows-integration-encoding-problem&#34;&gt;article&lt;/a&gt;&lt;/em&gt; in &lt;em&gt;&lt;a href=&#34;http://www.powershellmagazine.com&#34;&gt;&amp;ldquo;PowerShell Magazine&amp;rdquo;&lt;/a&gt;&lt;/em&gt; - the nice resource dedicated to &lt;em&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/powershell&#34;&gt;©Microsoft Power Shell&lt;/a&gt;&lt;/em&gt;.
 This publishing wasn&amp;rsquo;t possible without support and assistance of &lt;em&gt;&lt;a href=&#34;https://twitter.com/ShayLevy&#34;&gt;@ShayLevy&lt;/a&gt;&lt;/em&gt; and &lt;em&gt;Douglas Finke&lt;/em&gt;. My special thanks to them.&lt;/p&gt;</description>
@@ -220,20 +220,20 @@ This publishing wasn&amp;rsquo;t possible without support and assistance of &lt;
     
     <item>
       <title>Rsync HowTo</title>
-      <link>http://dgtekmate.ga/post/2015-08-19-rsync-howto/</link>
+      <link>http://dimig.github.io/post/2015-08-19-rsync-howto/</link>
       <pubDate>Wed, 19 Aug 2015 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2015-08-19-rsync-howto/</guid>
+      <guid>http://dimig.github.io/post/2015-08-19-rsync-howto/</guid>
       <description>&lt;p&gt;In this post I wanna give a clue how to use well known and famous Open Source &lt;a href=&#34;https://rsync.samba.org&#34;&gt;rsync&lt;/a&gt; program for directories synchronization.
 &lt;a href=&#34;https://rsync.samba.org&#34;&gt;rsync&lt;/a&gt; is a widely-used utility to keep copies of a file on two computer systems are same. It is commonly found on Unix-like systems and functions as both a file synchronization and file transfer program. The rsync algorithm, a type of delta encoding, is used to minimize network usage. Zlib may be used for additional compression, and SSH or stunnel can be used for data security.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>My Video publications</title>
-      <link>http://dgtekmate.ga/post/2015-08-10-my-video-publications/</link>
+      <link>http://dimig.github.io/post/2015-08-10-my-video-publications/</link>
       <pubDate>Mon, 10 Aug 2015 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2015-08-10-my-video-publications/</guid>
+      <guid>http://dimig.github.io/post/2015-08-10-my-video-publications/</guid>
       <description>&lt;p&gt;This is my next post in which I wanna to give a link to my &lt;a href=&#34;https://vimeo.com/dimig/videos&#34;&gt;Video Tutorials&lt;/a&gt;. I use &lt;a href=&#34;https://vimeo.com&#34;&gt;Vimeo&lt;/a&gt; for my tutorials. This is my temporary place for these videos. Why &lt;em&gt;Vimeo&lt;/em&gt;?&lt;/p&gt;</description>
     </item>
     

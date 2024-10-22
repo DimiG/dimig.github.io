@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PowerShell on OwnBlog from DimiG</title>
-    <link>http://dgtekmate.ga/tags/powershell/</link>
+    <link>http://dimig.github.io/tags/powershell/</link>
     <description>Recent content in PowerShell on OwnBlog from DimiG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 DimiG&lt;br&gt;All rights reserved</copyright>
     <lastBuildDate>Tue, 01 Dec 2015 11:00:00 +0300</lastBuildDate>
     
-	<atom:link href="http://dgtekmate.ga/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://dimig.github.io/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>PowerShell remoting HowTo</title>
-      <link>http://dgtekmate.ga/post/2015-12-01-powershell-remoting-howto/</link>
+      <link>http://dimig.github.io/post/2015-12-01-powershell-remoting-howto/</link>
       <pubDate>Tue, 01 Dec 2015 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2015-12-01-powershell-remoting-howto/</guid>
+      <guid>http://dimig.github.io/post/2015-12-01-powershell-remoting-howto/</guid>
       <description>&lt;p&gt;I continue my articles regarding the &lt;a href=&#34;https://msdn.microsoft.com/en-us/powershell&#34;&gt;PowerShell&lt;/a&gt; setup. This one will be dedicated to Remoting setup. &lt;em&gt;PowerShell Remoting&lt;/em&gt; allows you get access the full &lt;em&gt;PowerShell&lt;/em&gt; sessions on remote &lt;em&gt;Windows&lt;/em&gt; systems.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>PowerShell profile HowTo</title>
-      <link>http://dgtekmate.ga/post/2015-11-26-powershell-profile-howto/</link>
+      <link>http://dimig.github.io/post/2015-11-26-powershell-profile-howto/</link>
       <pubDate>Thu, 26 Nov 2015 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2015-11-26-powershell-profile-howto/</guid>
+      <guid>http://dimig.github.io/post/2015-11-26-powershell-profile-howto/</guid>
       <description>&lt;p&gt;When I work on Windows platform from time to time I prefer to use the &lt;a href=&#34;https://msdn.microsoft.com/en-us/powershell&#34;&gt;PowerShell&lt;/a&gt;. The &lt;em&gt;PowerShell&lt;/em&gt; is an automation platform and scripting language for &lt;em&gt;Windows&lt;/em&gt; and &lt;em&gt;Windows Server&lt;/em&gt; that allows you to simplify the management of your systems. Unlike other text-based shells, &lt;em&gt;PowerShell&lt;/em&gt; harnesses the power of the &lt;em&gt;.NET&lt;/em&gt; Framework, providing rich objects and a massive set of built-in functionality for taking control of your Windows environments.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>PowerShell Magazine</title>
-      <link>http://dgtekmate.ga/post/2015-08-20-powershell-mag/</link>
+      <link>http://dimig.github.io/post/2015-08-20-powershell-mag/</link>
       <pubDate>Thu, 20 Aug 2015 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2015-08-20-powershell-mag/</guid>
+      <guid>http://dimig.github.io/post/2015-08-20-powershell-mag/</guid>
       <description>&lt;p&gt;It is &lt;em&gt;NOT&lt;/em&gt; a fresh news and just was re-posted from my old &lt;a href=&#34;http://dimig.blogspot.ru&#34;&gt;blog&lt;/a&gt;.
 On &lt;em&gt;December 27, 2011&lt;/em&gt; I wrote the &lt;em&gt;&lt;a href=&#34;http://www.powershellmagazine.com/2011/12/27/powershell-linux-to-windows-integration-encoding-problem&#34;&gt;article&lt;/a&gt;&lt;/em&gt; in &lt;em&gt;&lt;a href=&#34;http://www.powershellmagazine.com&#34;&gt;&amp;ldquo;PowerShell Magazine&amp;rdquo;&lt;/a&gt;&lt;/em&gt; - the nice resource dedicated to &lt;em&gt;&lt;a href=&#34;https://msdn.microsoft.com/en-us/powershell&#34;&gt;©Microsoft Power Shell&lt;/a&gt;&lt;/em&gt;.
 This publishing wasn&amp;rsquo;t possible without support and assistance of &lt;em&gt;&lt;a href=&#34;https://twitter.com/ShayLevy&#34;&gt;@ShayLevy&lt;/a&gt;&lt;/em&gt; and &lt;em&gt;Douglas Finke&lt;/em&gt;. My special thanks to them.&lt;/p&gt;</description>

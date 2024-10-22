@@ -3,270 +3,270 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://dgtekmate.ga/about/</loc>
+    <loc>http://dimig.github.io/about/</loc>
     <lastmod>2019-05-17T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/</loc>
+    <loc>http://dimig.github.io/</loc>
     <lastmod>2019-05-17T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/tags/docker/</loc>
+    <loc>http://dimig.github.io/tags/docker/</loc>
     <lastmod>2017-11-23T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2017-11-23-docker-bind-mounts-windows7/</loc>
+    <loc>http://dimig.github.io/post/2017-11-23-docker-bind-mounts-windows7/</loc>
     <lastmod>2017-11-23T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/</loc>
-    <lastmod>2017-11-23T11:00:00+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://dgtekmate.ga/tags/</loc>
+    <loc>http://dimig.github.io/post/</loc>
     <lastmod>2017-11-23T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/topics/technical/</loc>
+    <loc>http://dimig.github.io/tags/</loc>
     <lastmod>2017-11-23T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/topics/</loc>
+    <loc>http://dimig.github.io/topics/technical/</loc>
     <lastmod>2017-11-23T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2017-11-21-docker-and-centos7-p2/</loc>
+    <loc>http://dimig.github.io/topics/</loc>
+    <lastmod>2017-11-23T11:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://dimig.github.io/post/2017-11-21-docker-and-centos7-p2/</loc>
     <lastmod>2017-11-21T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2017-10-27-docker-and-centos7-p1/</loc>
+    <loc>http://dimig.github.io/post/2017-10-27-docker-and-centos7-p1/</loc>
     <lastmod>2017-10-27T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/tags/blog-domain/</loc>
+    <loc>http://dimig.github.io/tags/blog-domain/</loc>
     <lastmod>2017-08-18T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2017-08-18-dn-changed/</loc>
+    <loc>http://dimig.github.io/post/2017-08-18-dn-changed/</loc>
     <lastmod>2017-08-18T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/topics/ownblog/</loc>
+    <loc>http://dimig.github.io/topics/ownblog/</loc>
     <lastmod>2017-08-18T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2017-05-23-macoscloning/</loc>
+    <loc>http://dimig.github.io/post/2017-05-23-macoscloning/</loc>
     <lastmod>2017-05-23T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/tags/macos/</loc>
+    <loc>http://dimig.github.io/tags/macos/</loc>
     <lastmod>2017-05-23T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2017-04-03-scoop/</loc>
+    <loc>http://dimig.github.io/post/2017-04-03-scoop/</loc>
     <lastmod>2017-04-03T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/tags/scoop/</loc>
+    <loc>http://dimig.github.io/tags/scoop/</loc>
     <lastmod>2017-04-03T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/tags/cygwin/</loc>
+    <loc>http://dimig.github.io/tags/cygwin/</loc>
     <lastmod>2016-10-25T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2016-10-25-remote-editing/</loc>
+    <loc>http://dimig.github.io/post/2016-10-25-remote-editing/</loc>
     <lastmod>2016-10-25T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/tags/qt/</loc>
+    <loc>http://dimig.github.io/tags/qt/</loc>
     <lastmod>2016-03-30T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2016-03-30-qt-static-mingw-01/</loc>
+    <loc>http://dimig.github.io/post/2016-03-30-qt-static-mingw-01/</loc>
     <lastmod>2016-03-30T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/tags/netapp/</loc>
+    <loc>http://dimig.github.io/tags/netapp/</loc>
     <lastmod>2016-03-29T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2016-03-29-netapp-r200-tips-tricks-02/</loc>
+    <loc>http://dimig.github.io/post/2016-03-29-netapp-r200-tips-tricks-02/</loc>
     <lastmod>2016-03-29T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2016-03-23-netapp-r200-volsetup-01/</loc>
+    <loc>http://dimig.github.io/post/2016-03-23-netapp-r200-volsetup-01/</loc>
     <lastmod>2016-03-23T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/tags/robocopy/</loc>
+    <loc>http://dimig.github.io/tags/robocopy/</loc>
     <lastmod>2016-02-16T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2016-02-16-robocopy/</loc>
+    <loc>http://dimig.github.io/post/2016-02-16-robocopy/</loc>
     <lastmod>2016-02-16T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/tags/emacs/</loc>
+    <loc>http://dimig.github.io/tags/emacs/</loc>
     <lastmod>2016-02-02T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2016-02-02-emacs-strip/</loc>
+    <loc>http://dimig.github.io/post/2016-02-02-emacs-strip/</loc>
     <lastmod>2016-02-02T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2016-01-27-cygwin-go/</loc>
+    <loc>http://dimig.github.io/post/2016-01-27-cygwin-go/</loc>
     <lastmod>2016-01-27T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2016-01-25-cygwin-pass/</loc>
+    <loc>http://dimig.github.io/post/2016-01-25-cygwin-pass/</loc>
     <lastmod>2016-01-25T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2015-12-31-cygwin-postgresql/</loc>
+    <loc>http://dimig.github.io/post/2015-12-31-cygwin-postgresql/</loc>
     <lastmod>2015-12-31T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/tags/python/</loc>
+    <loc>http://dimig.github.io/tags/python/</loc>
     <lastmod>2015-12-22T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2015-12-22-python-virtual-environment/</loc>
+    <loc>http://dimig.github.io/post/2015-12-22-python-virtual-environment/</loc>
     <lastmod>2015-12-22T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/tags/powershell/</loc>
+    <loc>http://dimig.github.io/tags/powershell/</loc>
     <lastmod>2015-12-01T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2015-12-01-powershell-remoting-howto/</loc>
+    <loc>http://dimig.github.io/post/2015-12-01-powershell-remoting-howto/</loc>
     <lastmod>2015-12-01T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2015-11-26-powershell-profile-howto/</loc>
+    <loc>http://dimig.github.io/post/2015-11-26-powershell-profile-howto/</loc>
     <lastmod>2015-11-26T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/tags/centos/</loc>
+    <loc>http://dimig.github.io/tags/centos/</loc>
     <lastmod>2015-10-19T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2015-10-19-centos-update-nokernel/</loc>
+    <loc>http://dimig.github.io/post/2015-10-19-centos-update-nokernel/</loc>
     <lastmod>2015-10-19T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/tags/atto/</loc>
+    <loc>http://dimig.github.io/tags/atto/</loc>
     <lastmod>2015-10-16T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2015-10-16-atto-celerity-setup/</loc>
+    <loc>http://dimig.github.io/post/2015-10-16-atto-celerity-setup/</loc>
     <lastmod>2015-10-16T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/tags/lftp/</loc>
+    <loc>http://dimig.github.io/tags/lftp/</loc>
     <lastmod>2015-09-01T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2015-09-01-lftp-mirror/</loc>
+    <loc>http://dimig.github.io/post/2015-09-01-lftp-mirror/</loc>
     <lastmod>2015-09-01T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2015-08-20-powershell-mag/</loc>
+    <loc>http://dimig.github.io/post/2015-08-20-powershell-mag/</loc>
     <lastmod>2015-08-20T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2015-08-19-rsync-howto/</loc>
+    <loc>http://dimig.github.io/post/2015-08-19-rsync-howto/</loc>
     <lastmod>2015-08-19T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/tags/rsync/</loc>
+    <loc>http://dimig.github.io/tags/rsync/</loc>
     <lastmod>2015-08-19T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2015-08-10-my-video-publications/</loc>
+    <loc>http://dimig.github.io/post/2015-08-10-my-video-publications/</loc>
     <lastmod>2015-08-10T11:00:00+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/tags/video/</loc>
+    <loc>http://dimig.github.io/tags/video/</loc>
     <lastmod>2015-08-10T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/tags/blog/</loc>
+    <loc>http://dimig.github.io/tags/blog/</loc>
     <lastmod>2015-07-24T11:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://dgtekmate.ga/post/2015-07-24-my-first-post/</loc>
+    <loc>http://dimig.github.io/post/2015-07-24-my-first-post/</loc>
     <lastmod>2015-07-24T11:00:00+03:00</lastmod>
   </url>
   

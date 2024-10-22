@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Robocopy on OwnBlog from DimiG</title>
-    <link>http://dgtekmate.ga/tags/robocopy/</link>
+    <link>http://dimig.github.io/tags/robocopy/</link>
     <description>Recent content in Robocopy on OwnBlog from DimiG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 DimiG&lt;br&gt;All rights reserved</copyright>
     <lastBuildDate>Tue, 16 Feb 2016 11:00:00 +0300</lastBuildDate>
     
-	<atom:link href="http://dgtekmate.ga/tags/robocopy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://dimig.github.io/tags/robocopy/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Robust File Copy for Windows</title>
-      <link>http://dgtekmate.ga/post/2016-02-16-robocopy/</link>
+      <link>http://dimig.github.io/post/2016-02-16-robocopy/</link>
       <pubDate>Tue, 16 Feb 2016 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2016-02-16-robocopy/</guid>
+      <guid>http://dimig.github.io/post/2016-02-16-robocopy/</guid>
       <description>&lt;p&gt;Recently I had a problem with the &lt;em&gt;file media server&lt;/em&gt; when one of the disk in disk array is down. In this case every server degrade the own disk speed, cause it has to recover the data from the broken one. The problem was that I have thousands of important files &lt;em&gt;(&amp;gt;1Gb)&lt;/em&gt; there which I can&amp;rsquo;t allow to lose. Disk rebuild is risky cause if during rebuild process the second hard drive down - you may lose your data very easy. The server and clients working on &lt;em&gt;Windows&lt;/em&gt; platform. If I start save material to the local hard drives by &lt;em&gt;Windows&lt;/em&gt; copy I get &lt;em&gt;Windows&lt;/em&gt; error, cause transmission interrupted by server frequently. Other side I want to be sure that my local copy reflect the files location on the server.&lt;/p&gt;
 
 &lt;p&gt;I remembered that there is a good program for such purposes on every &lt;em&gt;Windows&lt;/em&gt; system which calls &lt;a href=&#34;https://en.wikipedia.org/wiki/Robocopy&#34;&gt;Robocopy&lt;/a&gt;. It saved my days.&lt;/p&gt;</description>

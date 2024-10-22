@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NetApp on OwnBlog from DimiG</title>
-    <link>http://dgtekmate.ga/tags/netapp/</link>
+    <link>http://dimig.github.io/tags/netapp/</link>
     <description>Recent content in NetApp on OwnBlog from DimiG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 DimiG&lt;br&gt;All rights reserved</copyright>
     <lastBuildDate>Tue, 29 Mar 2016 11:00:00 +0300</lastBuildDate>
     
-	<atom:link href="http://dgtekmate.ga/tags/netapp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://dimig.github.io/tags/netapp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>NetApp R200 Tips &amp; Tricks</title>
-      <link>http://dgtekmate.ga/post/2016-03-29-netapp-r200-tips-tricks-02/</link>
+      <link>http://dimig.github.io/post/2016-03-29-netapp-r200-tips-tricks-02/</link>
       <pubDate>Tue, 29 Mar 2016 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2016-03-29-netapp-r200-tips-tricks-02/</guid>
+      <guid>http://dimig.github.io/post/2016-03-29-netapp-r200-tips-tricks-02/</guid>
       <description>&lt;p&gt;This is &lt;em&gt;my second&lt;/em&gt; article about &lt;a href=&#34;http://www.netapp.com/us/&#34;&gt;NetApp&lt;/a&gt; &lt;strong&gt;R200&lt;/strong&gt; filer. I call it &lt;strong&gt;&lt;em&gt;Tips &amp;amp; Tricks&lt;/em&gt;&lt;/strong&gt; and going to add the useful commands for &lt;em&gt;Filer&lt;/em&gt; manipulation here. The updates regarding this theme will be added in this post if exist.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>NetApp R200 volume setup procedure</title>
-      <link>http://dgtekmate.ga/post/2016-03-23-netapp-r200-volsetup-01/</link>
+      <link>http://dimig.github.io/post/2016-03-23-netapp-r200-volsetup-01/</link>
       <pubDate>Wed, 23 Mar 2016 11:00:00 +0300</pubDate>
       
-      <guid>http://dgtekmate.ga/post/2016-03-23-netapp-r200-volsetup-01/</guid>
+      <guid>http://dimig.github.io/post/2016-03-23-netapp-r200-volsetup-01/</guid>
       <description>&lt;p&gt;One month ago I had opportunity to play with old filer &lt;strong&gt;R200&lt;/strong&gt; from &lt;a href=&#34;http://www.netapp.com/us/&#34;&gt;NetApp&lt;/a&gt; company. &lt;em&gt;&lt;a href=&#34;http://www.netapp.com/us/&#34;&gt;NetApp Inc.&lt;/a&gt;&lt;/em&gt;, formerly &lt;em&gt;&lt;a href=&#34;http://www.netapp.com/us/&#34;&gt;Network Appliance Inc.&lt;/a&gt;&lt;/em&gt;, is a well known &lt;em&gt;American&lt;/em&gt; computer storage and data management company headquartered in &lt;em&gt;Sunnyvale&lt;/em&gt;, &lt;em&gt;California&lt;/em&gt;. &lt;em&gt;NetApp&lt;/em&gt; competes in the data-storage devices industry. In &lt;strong&gt;2009&lt;/strong&gt;, &lt;em&gt;NetApp&lt;/em&gt; ranked second in market capitalization in its industry behind &lt;em&gt;EMC Corporation&lt;/em&gt; and ahead of &lt;em&gt;Seagate Technology&lt;/em&gt;, &lt;em&gt;Western Digital&lt;/em&gt;, &lt;em&gt;Brocade&lt;/em&gt;, &lt;em&gt;Imation&lt;/em&gt;, and &lt;em&gt;Quantum&lt;/em&gt;. In spite of this model was discontinued and it doesn&amp;rsquo;t have support now by the company I have decided to resurrect it for technical purposes and files exchange inside our internal network.&lt;/p&gt;
 
 &lt;p&gt;I plan to create a couple of articles about this theme here. Look into archive of my &lt;em&gt;&lt;a href=&#34;http://dimig.ga/archive&#34;&gt;Blog&lt;/a&gt;&lt;/em&gt;. You will find additional posts here soon. If you find it interesting - let me know about in comments below. In spite of &lt;em&gt;NetApp&lt;/em&gt; documentation exist in the &lt;em&gt;Internet&lt;/em&gt; this article reflect my own experience. Let&amp;rsquo;s briefly describe what the system I have.&lt;/p&gt;</description>
