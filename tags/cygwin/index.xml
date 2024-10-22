@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
     <title>Cygwin on OwnBlog from DimiG</title>
-    <link>http://dimig.github.io/tags/cygwin/</link>
+    <link>https://dimig.github.io/tags/cygwin/</link>
     <description>Recent content in Cygwin on OwnBlog from DimiG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 DimiG&lt;br&gt;All rights reserved</copyright>
     <lastBuildDate>Tue, 25 Oct 2016 11:00:00 +0300</lastBuildDate>
     
-	<atom:link href="http://dimig.github.io/tags/cygwin/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dimig.github.io/tags/cygwin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Emacs &amp; Vim remote editing under Cygwin</title>
-      <link>http://dimig.github.io/post/2016-10-25-remote-editing/</link>
+      <link>https://dimig.github.io/post/2016-10-25-remote-editing/</link>
       <pubDate>Tue, 25 Oct 2016 11:00:00 +0300</pubDate>
       
-      <guid>http://dimig.github.io/post/2016-10-25-remote-editing/</guid>
-      <description>&lt;p&gt;This article I want to dedicate to tricks for world famous text editors like &lt;a href=&#34;https://www.gnu.org/software/emacs/&#34;&gt;Emacs&lt;/a&gt; and &lt;a href=&#34;http://www.vim.org&#34;&gt;Vim&lt;/a&gt;. Sometimes there is a problem to edit a text file on a remote server. In this short article I&amp;rsquo;ll show you how.&lt;/p&gt;</description>
+      <guid>https://dimig.github.io/post/2016-10-25-remote-editing/</guid>
+      <description>&lt;p&gt;This article I want to dedicate to tricks for world famous text editors like &lt;a href=&#34;https://www.gnu.org/software/emacs/&#34;&gt;Emacs&lt;/a&gt; and &lt;a href=&#34;https://www.vim.org&#34;&gt;Vim&lt;/a&gt;. Sometimes there is a problem to edit a text file on a remote server. In this short article I&amp;rsquo;ll show you how.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Golang under Cygwin</title>
-      <link>http://dimig.github.io/post/2016-01-27-cygwin-go/</link>
+      <link>https://dimig.github.io/post/2016-01-27-cygwin-go/</link>
       <pubDate>Wed, 27 Jan 2016 11:00:00 +0300</pubDate>
       
-      <guid>http://dimig.github.io/post/2016-01-27-cygwin-go/</guid>
+      <guid>https://dimig.github.io/post/2016-01-27-cygwin-go/</guid>
       <description>&lt;p&gt;The current article I have to write by two reasons. First - the &lt;a href=&#34;https://golang.org&#34;&gt;Go&lt;/a&gt; language developed by &lt;em&gt;Google&lt;/em&gt; becoming popular little by little. Second - there is &lt;strong&gt;NO&lt;/strong&gt; accurate information about how to setup &lt;em&gt;Go&lt;/em&gt; under &lt;a href=&#34;https://www.cygwin.com&#34;&gt;Cygwin&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&amp;ldquo;&lt;em&gt;Go&lt;/em&gt; also commonly referred to as &lt;em&gt;Golang&lt;/em&gt;, is a open source programming language developed at &lt;em&gt;Google&lt;/em&gt; in &lt;strong&gt;2007&lt;/strong&gt; by &lt;em&gt;Robert Griesemer&lt;/em&gt;, &lt;em&gt;Rob Pike&lt;/em&gt;, and &lt;em&gt;Ken Thompson&lt;/em&gt;. Designed primarily for systems programming, it is a compiled, statically typed language in the tradition of &lt;strong&gt;C&lt;/strong&gt; and &lt;strong&gt;C++&lt;/strong&gt;, with garbage collection, various safety features and CSP-style concurrent programming features added.&amp;rdquo;&lt;/p&gt;</description>
@@ -34,19 +34,19 @@
     
     <item>
       <title>UNIX pass under Cygwin</title>
-      <link>http://dimig.github.io/post/2016-01-25-cygwin-pass/</link>
+      <link>https://dimig.github.io/post/2016-01-25-cygwin-pass/</link>
       <pubDate>Mon, 25 Jan 2016 11:00:00 +0300</pubDate>
       
-      <guid>http://dimig.github.io/post/2016-01-25-cygwin-pass/</guid>
-      <description>&lt;p&gt;For any IT system administrators and specialists there is a headache to remember a lot of working passwords in daily work. As you probably know is safe to use the different ones for better security. There are many password managers which collect and encrypt your passwords locally or remotely. The best way if your password manager is simple and follow the &lt;em&gt;Unix&lt;/em&gt; philosophy. With &lt;a href=&#34;http://www.passwordstore.org&#34;&gt;pass&lt;/a&gt;, each password lives inside of a &lt;a href=&#34;https://www.gnupg.org&#34;&gt;GNU Privacy Guard&lt;/a&gt; (GnuPG, GPG) encrypted file whose file name is the title of the website or resource that requires the password.&lt;/p&gt;</description>
+      <guid>https://dimig.github.io/post/2016-01-25-cygwin-pass/</guid>
+      <description>&lt;p&gt;For any IT system administrators and specialists there is a headache to remember a lot of working passwords in daily work. As you probably know is safe to use the different ones for better security. There are many password managers which collect and encrypt your passwords locally or remotely. The best way if your password manager is simple and follow the &lt;em&gt;Unix&lt;/em&gt; philosophy. With &lt;a href=&#34;https://www.passwordstore.org&#34;&gt;pass&lt;/a&gt;, each password lives inside of a &lt;a href=&#34;https://www.gnupg.org&#34;&gt;GNU Privacy Guard&lt;/a&gt; (GnuPG, GPG) encrypted file whose file name is the title of the website or resource that requires the password.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>PostgreSQL under Cygwin</title>
-      <link>http://dimig.github.io/post/2015-12-31-cygwin-postgresql/</link>
+      <link>https://dimig.github.io/post/2015-12-31-cygwin-postgresql/</link>
       <pubDate>Thu, 31 Dec 2015 11:00:00 +0300</pubDate>
       
-      <guid>http://dimig.github.io/post/2015-12-31-cygwin-postgresql/</guid>
+      <guid>https://dimig.github.io/post/2015-12-31-cygwin-postgresql/</guid>
       <description>&lt;p&gt;As I wrote below I use &lt;a href=&#34;https://www.cygwin.com&#34;&gt;Cygwin&lt;/a&gt; with &lt;em&gt;Windows&lt;/em&gt; platform to achieve the &lt;em&gt;Busi-do&lt;/em&gt; 😏. Yeah, I&amp;rsquo;m not looking for easy ways, really. To use the &lt;a href=&#34;https://www.cygwin.com&#34;&gt;Cygwin&lt;/a&gt; is not easy way, but it really works for many tasks. If you work with databases there are two ways. First is to setup database directly into the &lt;em&gt;Windows&lt;/em&gt;, the second is setup database into the &lt;a href=&#34;https://www.cygwin.com&#34;&gt;Cygwin&lt;/a&gt;. The first way is easiest one, but may &lt;em&gt;NOT&lt;/em&gt; working if you develop inside &lt;em&gt;Cygwin&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     

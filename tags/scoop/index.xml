@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
     <title>Scoop on OwnBlog from DimiG</title>
-    <link>http://dimig.github.io/tags/scoop/</link>
+    <link>https://dimig.github.io/tags/scoop/</link>
     <description>Recent content in Scoop on OwnBlog from DimiG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 DimiG&lt;br&gt;All rights reserved</copyright>
     <lastBuildDate>Mon, 03 Apr 2017 11:00:00 +0300</lastBuildDate>
     
-	<atom:link href="http://dimig.github.io/tags/scoop/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dimig.github.io/tags/scoop/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Excellent scoop</title>
-      <link>http://dimig.github.io/post/2017-04-03-scoop/</link>
+      <link>https://dimig.github.io/post/2017-04-03-scoop/</link>
       <pubDate>Mon, 03 Apr 2017 11:00:00 +0300</pubDate>
       
-      <guid>http://dimig.github.io/post/2017-04-03-scoop/</guid>
-      <description>&lt;p&gt;Sorry my long absence in this &lt;em&gt;Blog&lt;/em&gt; writing. More age we have less time available for foreign affairs. In this blog I want to present the amazing command-line installer for &lt;em&gt;Windows&lt;/em&gt;. It calls &lt;a href=&#34;http://scoop.sh/&#34;&gt;scoop&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>https://dimig.github.io/post/2017-04-03-scoop/</guid>
+      <description>&lt;p&gt;Sorry my long absence in this &lt;em&gt;Blog&lt;/em&gt; writing. More age we have less time available for foreign affairs. In this blog I want to present the amazing command-line installer for &lt;em&gt;Windows&lt;/em&gt;. It calls &lt;a href=&#34;https://scoop.sh/&#34;&gt;scoop&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

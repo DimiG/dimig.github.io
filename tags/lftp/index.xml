@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
     <title>Lftp on OwnBlog from DimiG</title>
-    <link>http://dimig.github.io/tags/lftp/</link>
+    <link>https://dimig.github.io/tags/lftp/</link>
     <description>Recent content in Lftp on OwnBlog from DimiG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 DimiG&lt;br&gt;All rights reserved</copyright>
     <lastBuildDate>Tue, 01 Sep 2015 11:00:00 +0300</lastBuildDate>
     
-	<atom:link href="http://dimig.github.io/tags/lftp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dimig.github.io/tags/lftp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Lftp mirror</title>
-      <link>http://dimig.github.io/post/2015-09-01-lftp-mirror/</link>
+      <link>https://dimig.github.io/post/2015-09-01-lftp-mirror/</link>
       <pubDate>Tue, 01 Sep 2015 11:00:00 +0300</pubDate>
       
-      <guid>http://dimig.github.io/post/2015-09-01-lftp-mirror/</guid>
+      <guid>https://dimig.github.io/post/2015-09-01-lftp-mirror/</guid>
       <description>&lt;p&gt;The &lt;strong&gt;FTP&lt;/strong&gt; &lt;em&gt;File Transfer Protocol&lt;/em&gt; protocol is quite old. It was created in &lt;strong&gt;1971&lt;/strong&gt; and changed in &lt;strong&gt;1972&lt;/strong&gt; which was closed to modern version.
 Development of the Internet endangered using &lt;strong&gt;FTP&lt;/strong&gt; cause of the security weakness. Anyway this protocol is still usable in some production areas like &lt;em&gt;WEB design&lt;/em&gt;, &lt;em&gt;Post production&lt;/em&gt;, etc.
 As for me I prefer to stay away from &lt;strong&gt;FTP&lt;/strong&gt; and prefer the modern secured protocols, but in some cases I have to use it for a while.&lt;/p&gt;</description>

@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
     <title>CentOS on OwnBlog from DimiG</title>
-    <link>http://dimig.github.io/tags/centos/</link>
+    <link>https://dimig.github.io/tags/centos/</link>
     <description>Recent content in CentOS on OwnBlog from DimiG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 DimiG&lt;br&gt;All rights reserved</copyright>
     <lastBuildDate>Mon, 19 Oct 2015 11:00:00 +0300</lastBuildDate>
     
-	<atom:link href="http://dimig.github.io/tags/centos/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dimig.github.io/tags/centos/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CentOS without kernel update</title>
-      <link>http://dimig.github.io/post/2015-10-19-centos-update-nokernel/</link>
+      <link>https://dimig.github.io/post/2015-10-19-centos-update-nokernel/</link>
       <pubDate>Mon, 19 Oct 2015 11:00:00 +0300</pubDate>
       
-      <guid>http://dimig.github.io/post/2015-10-19-centos-update-nokernel/</guid>
+      <guid>https://dimig.github.io/post/2015-10-19-centos-update-nokernel/</guid>
       <description>&lt;p&gt;For my servers I prefer to use the &lt;em&gt;CentOS&lt;/em&gt; as operating system. It is reliable, professional and modern &lt;em&gt;Linux&lt;/em&gt; distribution which is aimed to the server platform usage.&lt;/p&gt;
 
 &lt;p&gt;Periodically appear the task to update the packages inside. The system package manager, which calls &lt;em&gt;Yum&lt;/em&gt;, allow to do it easily.&lt;/p&gt;</description>

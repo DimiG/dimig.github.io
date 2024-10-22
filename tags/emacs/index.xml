@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
     <title>Emacs on OwnBlog from DimiG</title>
-    <link>http://dimig.github.io/tags/emacs/</link>
+    <link>https://dimig.github.io/tags/emacs/</link>
     <description>Recent content in Emacs on OwnBlog from DimiG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 DimiG&lt;br&gt;All rights reserved</copyright>
     <lastBuildDate>Tue, 02 Feb 2016 11:00:00 +0300</lastBuildDate>
     
-	<atom:link href="http://dimig.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dimig.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Emacs strip CR(^M)</title>
-      <link>http://dimig.github.io/post/2016-02-02-emacs-strip/</link>
+      <link>https://dimig.github.io/post/2016-02-02-emacs-strip/</link>
       <pubDate>Tue, 02 Feb 2016 11:00:00 +0300</pubDate>
       
-      <guid>http://dimig.github.io/post/2016-02-02-emacs-strip/</guid>
-      <description>&lt;p&gt;Time to time I use the great old text editor &lt;a href=&#34;http://www.gnu.org/software/emacs&#34;&gt;Emacs&lt;/a&gt;. In spite of advanced age this reliable text editor competes with modern text editors and even some &lt;em&gt;IDEs&lt;/em&gt;. If you work with text files on different platforms you may encounter with &lt;em&gt;CR(^M)&lt;/em&gt; symbols on every line. This happen If you have a mix of lines that ends with &lt;em&gt;^M&lt;/em&gt; and lines that don’t.&lt;/p&gt;
+      <guid>https://dimig.github.io/post/2016-02-02-emacs-strip/</guid>
+      <description>&lt;p&gt;Time to time I use the great old text editor &lt;a href=&#34;https://www.gnu.org/software/emacs&#34;&gt;Emacs&lt;/a&gt;. In spite of advanced age this reliable text editor competes with modern text editors and even some &lt;em&gt;IDEs&lt;/em&gt;. If you work with text files on different platforms you may encounter with &lt;em&gt;CR(^M)&lt;/em&gt; symbols on every line. This happen If you have a mix of lines that ends with &lt;em&gt;^M&lt;/em&gt; and lines that don’t.&lt;/p&gt;
 
-&lt;p&gt;Also if you see &lt;em&gt;^M&lt;/em&gt; in your file, you may have opened a file with &lt;em&gt;DOS-style&lt;/em&gt; line endings &lt;em&gt;(carriage return + line feed)&lt;/em&gt; while &lt;a href=&#34;http://www.gnu.org/software/emacs&#34;&gt;Emacs&lt;/a&gt; assumes it has &lt;em&gt;Unix-style&lt;/em&gt; line endings (line feed only). (The carriage-return character, sometimes abbreviated as &lt;em&gt;CR&lt;/em&gt;, is &lt;em&gt;^M&lt;/em&gt;. The line-feed character, sometimes abbreviated as &lt;em&gt;LF&lt;/em&gt;, is &lt;em&gt;^J&lt;/em&gt;)&lt;/p&gt;</description>
+&lt;p&gt;Also if you see &lt;em&gt;^M&lt;/em&gt; in your file, you may have opened a file with &lt;em&gt;DOS-style&lt;/em&gt; line endings &lt;em&gt;(carriage return + line feed)&lt;/em&gt; while &lt;a href=&#34;https://www.gnu.org/software/emacs&#34;&gt;Emacs&lt;/a&gt; assumes it has &lt;em&gt;Unix-style&lt;/em&gt; line endings (line feed only). (The carriage-return character, sometimes abbreviated as &lt;em&gt;CR&lt;/em&gt;, is &lt;em&gt;^M&lt;/em&gt;. The line-feed character, sometimes abbreviated as &lt;em&gt;LF&lt;/em&gt;, is &lt;em&gt;^J&lt;/em&gt;)&lt;/p&gt;</description>
     </item>
     
   </channel>
